@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="font-['poppins']">
+
+    <!-- header -->
+    <header id="app-header"></header>
+
+
+    <div class="container font-['poppins'] mx-auto px-16 max-sm:px-8 py-8">
+        <h1 class="text-5xl font-bold text-[#FF570C] text-center mb-12">ALL PLANS</h1>
+        
+        <div class="flex flex-col border-[1px] p-4 border-[#FF570C] rounded-lg md:flex-row gap-4">
+            <!-- Sidebar -->
+            <div class="md:w-1/5 bg-[#FFE8D6] rounded-lg p-4">
+                <div class=" rounded-lg overflow-hidden">
+                    <button id="vegBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] hover:bg-[#FF570C] transition-all duration-300">VEG</button>
+                    <button id="nonVegBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">NON - VEG</button>
+                    <button id="gymBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">GYM</button>
+                </div>
+            </div>
+            <div class="w-[0.5px] bg-[#FF570C]"></div>
+            <!-- Main Content -->
+            <div class="md:w-3/4">
+                <!-- Veg Section -->
+                <div id="vegSection" class="section-content">
+                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Veg Meal</h2>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">BASIC VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">STANDARD VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">GOLD VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Non-Veg Section -->
+                <div id="nonVegSection" class="section-content hidden">
+                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Non-veg Meal</h2>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">BASIC NON-VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a></a>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">STANDARD NON-VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">GOLD NON-VEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gym Section -->
+                <div id="gymSection" class="section-content hidden">
+                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Gym Meal</h2>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">BASIC GYM PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">STANDARD GYM PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button>
+                            </div>
+                        </div>
+                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h2 class="text-xl font-extrabold mb-2">GOLD GYM PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer id="app-footer"></footer>
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>     
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section-content').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            document.querySelectorAll('#vegBtn, #nonVegBtn, #gymBtn').forEach(btn => {
+                btn.classList.remove('bg-[#FF570C]','text-[#FF570C]');
+                btn.classList.add('text-[#FF570C]');
+            });
+            document.getElementById(sectionId.replace('Section', 'Btn')).classList.add('bg-[#FF570C]','text-white');
+            document.getElementById(sectionId.replace('Section', 'Btn')).classList.remove('bg-[#FF570C]','text-white');
+        }
+
+        document.getElementById('vegBtn').addEventListener('click', () => showSection('vegSection'));
+        document.getElementById('nonVegBtn').addEventListener('click', () => showSection('nonVegSection'));
+        document.getElementById('gymBtn').addEventListener('click', () => showSection('gymSection'));
+    </script>
+</body>
+</html>
