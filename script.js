@@ -241,6 +241,40 @@ contactPageAnimation()
 // }
 // subscribePageAnimation()
 
+function choosePageAnimation(){
+  gsap.from(".choose",{
+    opacity:0,
+    stagger:1.5,
+    duration:0.8,
+    y:20,
+    scrollTrigger:{
+      trigger:".choose",
+      scroller:"body",
+      // markers:true,
+      start:"top 60%",
+      end:"top 40%",
+      scrub:2
+    }
+  })
+}
+choosePageAnimation()
+function customerPageAnimation(){
+  gsap.from(".customer",{
+    opacity:0,
+    stagger:1.5,
+    duration:0.8,
+    y:20,
+    scrollTrigger:{
+      trigger:".customer",
+      scroller:"body",
+      // markers:true,
+      start:"top 60%",
+      end:"top 40%",
+      scrub:2
+    }
+  })
+}
+customerPageAnimation()
 function aboutPageAnimation(){
   gsap.from(".about",{
     opacity:0,

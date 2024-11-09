@@ -29,11 +29,16 @@ let appHeader = `
         </div>
     
         <!-- Mobile Menu (Full-screen Overlay) -->
-        <div id="mobile-menu" class="fixed inset-0 bg-gradient-to-br from-[#FF6600] via-[#FF9D5C] to-[#FF570C] z-50 flex flex-col p-5 pt-20 space-y-8 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
+        <div id="mobile-menu" class="fixed inset-0 bg-[#FFE8D6] z-50 flex flex-col p-5 pt-20 space-y-8 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
             <!-- Close Icon -->
-            <button id="close-menu" class="absolute top-6 right-6 text-4xl focus:outline-none">
-                <i class="ri-close-line"></i>
-            </button>
+           <div>
+                <div>
+                    <img class="h-8 absolute top-6 left-6" src="./AaharKosh_logo.jpg" alt="AaharKosh Logo">
+                </div>
+                <button id="close-menu" class="absolute top-6 right-6 text-4xl focus:outline-none">
+                    <i class="ri-close-line"></i>
+                </button>
+           </div>
             <a href="./index.html#homePage" class="text-black h-12 w-72 flex items-center pl-4 text-[6vw]"> <i class="ri-home-4-line mr-6"></i> Home</a>
             <a href="./index.html#plansPage" class="text-black h-12 w-72 flex items-center pl-4 text-[6vw]"> <i class="ri-chat-check-line mr-6"></i> Plans</a>
             <a href="./index.html#servicePage" class="text-black h-12 w-72 flex items-center pl-4 text-[6vw]"> <i class="ri-customer-service-line mr-6"></i>How it Works</a>
