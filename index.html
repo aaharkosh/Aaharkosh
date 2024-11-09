@@ -9,7 +9,7 @@
 </head>
 <body class=" font-['poppins']">
     
-    <header id="app-header" class="mb-12"></header>
+    <header id="app-header" class="mb-32"></header>
     
      <!-- HOME-PAGE -->
     <div id="homePage" class="home max-lg:flex-col max-xl:flex-col max-md:flex-col flex relative items-center px-3 lg:px-24 w-full justify-center gap-30 overflow-hidden">
@@ -22,8 +22,8 @@
 
             <p class="left-para text-xl lg:w-96 max-md:w-96 max-sm:w-72 max-md:ml-3 max-md:text-center">We will fill your tummy with delicious food with fast delivery.</p>
             <div class="flex items-center max-sm:flex-col gap-4">
-                <button class="left-btn max-lg:text-xl max-lg:w-60 max-sm:text-sm max-sm:w-44 overflow-hidden px-3 py-2 shadow-md rounded-xl bg-gradient-to-tl from-[#FF570C] to-orange-400 w-44 items-center text-start leading-tight text-sm flex gap-2 text-white"> <img class="h-10" src="./images-removebg-preview.png">GET IT ON <br> GOOGLE PLAY</button>
-                 <button class="left-btn max-lg:text-xl max-lg:w-60 max-sm:text-sm max-sm:w-44 overflow-hidden px-4 py-3 shadow-md rounded-xl bg-gradient-to-tl from-[#FF570C] to-orange-400 w-40 items-center text-start leading-tight text-sm flex gap-2 text-white"> <i class="ri-apple-fill text-3xl"></i> GET IT ON <br> APP STORE</button>
+                <button class="left-btn max-lg:text-xl max-lg:w-60 max-sm:text-sm max-sm:w-44 overflow-hidden px-3 py-2 shadow-md rounded-xl bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] w-44 items-center text-start leading-tight text-sm flex gap-2 text-white"> <img class="h-10" src="./images-removebg-preview.png">GET IT ON <br> GOOGLE PLAY</button>
+                 <button class="left-btn max-lg:text-xl max-lg:w-60 max-sm:text-sm max-sm:w-44 overflow-hidden px-4 py-3 shadow-md rounded-xl bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] w-40 items-center text-start leading-tight text-sm flex gap-2 text-white"> <i class="ri-apple-fill text-3xl"></i> GET IT ON <br> APP STORE</button>
             </div>
             <div class="icon flex gap-3 max-lg:gap-5 max-md:gap-2 mt-10 max-md:mt-5">
                 <button class=" text-lg px-2 max-md:text-2xl py-1 shadow-md rounded-xl cursor-pointer bg-[#FFE8D6] hover:bg-[#FF570C] hover:text-white transition duration-500 ease-in-out hover:scale-110"><i class="ri-twitter-fill"></i></button>
@@ -39,7 +39,7 @@
         <!-- HOME-RIGHTPART -->
 
         <div class="homepage-rightpart max-lg:mt-2 max-lg:mb-8 flex max-md:w-full max-lg:ml-[-35vw] max-md:h-[50vh] flex-col items-center ml-[-35vw] ">
-            <div class="bg-gradient-to-tl max-md:ml-36 max-lg:w-[80vw] max-lg:h-[60vh] max-md:mt-12 from-[#FF570C] to-orange-400 max-md:pt-10 lg:h-[70vh] w-[30vw] max-md:h-[65%] max-md:w-[73%] rounded-[10vw]">
+            <div class="bg-gradient-to-br from-[#FF6600] via-[#FF9D5C] to-[#FF570C] max-md:ml-36 max-lg:w-[80vw] max-lg:h-[60vh] max-md:mt-12 from-[#FF570C] to-orange-400 max-md:pt-10 lg:h-[70vh] w-[30vw] max-md:h-[65%] max-md:w-[73%] rounded-[10vw]">
                 
                 <div class="flex ml-[-12vw] mt-[-4.2vw]">
                     <div class="ml-[-3vw]">
@@ -87,8 +87,9 @@
  
     <!-- OUR SERVICES -->
 
-    <div id="servicePage">
-        <h1 class="service-head text-center text-5xl font-semibold mt-32 max-md:mt-8">How it <span class="text-[#FF570C]">Works</span></h1>
+    <div id="servicePage" class="">
+        
+        <h1 class="service-head text-center text-5xl font-semibold mt-32 pt-10 max-md:mt-8">How it <span class="text-[#FF570C]">Works</span></h1>
         <div id="creative-slider" class="w-full max-lg:mt-4 h-screen overflow-hidden max-w-[90vw] mx-auto mt-[-4vw] max-md:mt-8 max-md:h-[45vh] max-md:max-w-[100vw] px-4">
             <div class="relative rounded-lg overflow-hidden">
             <div id="slider-container" class="flex transition-transform duration-500 ease-in-out">
@@ -182,7 +183,7 @@
             <!-- Navigation Buttons -->
             <button 
                 id="prevSlide" 
-                class="absolute top-1/2 left-4 w-10 text-white transform -translate-y-1/2 bg-[#FF570C] rounded-full p-2 focus:outline-none transition-all duration-300"
+                class="absolute top-1/2 left-28 max-sm:left-4 w-10 text-white transform -translate-y-1/2 bg-[#FF570C] rounded-full p-2 focus:outline-none transition-all duration-300"
                 aria-label="Previous slide"
             >
                 &#10094;
@@ -190,14 +191,14 @@
         
             <button 
                 id="nextSlide" 
-                class="absolute top-1/2 right-4 w-10 text-white transform -translate-y-1/2 bg-[#FF570C]  rounded-full p-2 focus:outline-none transition-all duration-300"
+                class="absolute top-1/2 right-28 max-sm:right-4 w-10 text-white transform -translate-y-1/2 bg-[#FF570C]  rounded-full p-2 focus:outline-none transition-all duration-300"
                 aria-label="Next slide"
             >
                 &#10095;
             </button>
         
             <!-- Bullet Dots -->
-            <div id="bullet-container" class="absolute bottom-12 max-md:top-[90vw] left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <div id="bullet-container" class="absolute bottom-12 pb-7 max-md:top-[90vw] left-1/2 transform -translate-x-1/2 flex space-x-2">
                 <span data-slide="0" class="w-3 h-3 rounded-full bg-[#FFE8D6] focus:outline-none transition-all duration-300"></span>
                 <span data-slide="1" class="w-3 h-3 rounded-full bg-[#FF570C] focus:outline-none transition-all duration-300"></span>
                 <span data-slide="2" class="w-3 h-3 rounded-full bg-[#FF570C] focus:outline-none transition-all duration-300"></span>
@@ -213,7 +214,7 @@
 
     <!-- PLANS-PAGE -->
 
-    <div id="plansPage" class="flex flex-col items-center max-sm:mt-[40vw] px-5 py-20 max-xl:px-0 max-lg:py-0 max-sm:h-[420vw] mt-8 bg-white max-md:h-[210vh]">
+    <div id="plansPage" class="flex flex-col items-center max-sm:mt-[60vw] mb-12 px-5 py-20 max-xl:px-0 max-lg:py-0 max-sm:h-[420vw] mt-8 bg-white max-md:h-[210vh]">
         <!-- Heading -->
         <h1 class="plan-head text-5xl max-lg:mt-[-20vw] max-md:mb-12 font-bold mb-16 max-md:text-center max-md:text-4xl max-md:w-[60vw]">FIND THE <span class="text-[#FF570C]">RIGHT PLANS</span></h1>
         
@@ -221,7 +222,7 @@
             <!-- Pricing Plans -->
         <div class="plancards max-sm:ml-0 max-xl:ml-[-10vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <!-- Basic Plan -->
-            <div class="plancard1 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] hover:border-none transition-all duration-500 hover:scale-105">
+            <div class="plancard1 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105">
               <h2 class="text-2xl font-bold mb-2">BASIC PLAN</h2>
               <p class="text-xl font-semibold mb-6">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
               <h3 class="text-lg font-bold mb-4">Features</h3>
@@ -233,11 +234,11 @@
               <p class="text-sm text-gray-500 mb-12">
                 Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
               </p>
-              <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+              <a href="./standardplans.html"><button class="bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
             </div>
             
             <!-- Standard Plan -->
-            <div class="plancard2 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] hover:border-none transition-all duration-500 hover:scale-105">
+            <div class="plancard2 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105">
               <h2 class="text-2xl font-bold mb-2">STANDARD PLAN</h2>
               <p class="text-xl font-semibold mb-6">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
               <h3 class="text-lg font-bold mb-4">Features</h3>
@@ -249,11 +250,11 @@
               <p class="text-sm text-gray-500 mb-12">
                 Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
               </p>
-              <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+              <a href="./standardplans.html"><button class="bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
             </div>
             
             <!-- Gold Plan -->
-            <div class="plancard3 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md  cursor-pointer hover:bg-[#FFE8D6] hover:border-none transition-all duration-300 hover:scale-105">
+            <div class="plancard3 border rounded-xl border-[#FF570C] p-8 w-[20vw] max-sm:w-[75vw] shadow-md  cursor-pointer hover:bg-[#FFE8D6] transition-all duration-300 hover:scale-105">
               <h2 class="text-2xl font-bold mb-2">GOLD PLAN</h2>
               <p class="text-xl font-semibold mb-6">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
               <h3 class="text-lg font-bold mb-4">Features</h3>
@@ -265,7 +266,7 @@
               <p class="text-sm text-gray-500 mb-12">
                 Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
               </p>
-              <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+              <a href="./standardplans.html"><button class="bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
             </div>
           </div>
   
@@ -279,57 +280,131 @@
 
     <!-- CONTACT US -->
      
-    <div id="contactPage" class="flex items-center justify-center flex-col mt-8 max-sm:mt-0">
-        <!-- title -->
-        <div class="text-3xl md:text-5xl font-black text-center overflow-hidden">
-            <h1 class="contact-head">GET IN <span class="text-[#FF570C]">TOUCH</span></h1>
-        </div>
+    <div id="contactPage" class="px-4 h-[85vh] max-sm:h-[110vh] py-10 w-full">
         
-        <!-- about -->
-        <div>
-            <p class="w-[90vw] md:w-[60vw] lg:w-[35vw] text-center mt-5 contact-para">
-                Get in touch with us for any questions, feedback, or assistance with your food orders—our team is here to help!
-            </p>
-    
-        </div>
+        <h1 class="contact-head text-center text-5xl font-semibold">GET IN <span class="text-[#FF570C]">TOUCH</span></h1>
         
-        <!-- contact -->
-        <div class="contact-box w-[90vw] gap-4 md:w-[75vw] lg:w-[55vw] bg-[#FFE8D6] mb-32 mt-16 rounded-xl flex flex-col md:flex-row justify-between items-center p-3">
 
-            <div class="p-4">
-                <p class="text-[#FF570C] text-2xl max-sm:ml-4 max-sm:w-[70vw] font-semibold w-[22vw] text-center">We’d love to hear from you! Let us know how we can improve your experience.</p>
-                <div class="h-[35vh] w-[20vw] max-sm:w-full">
-                    <img class="h-[40vh] w-[23vw] max-sm:w-[100vw]" src="./images/aaharkosh-image-removebg-preview.png" alt="">
+        <div class="min-h-screen flex items-center justify-center mt-[-6vw] max-sm:mt-0">
+            <div class="bg-[#FFE8D6] contact-box rounded-xl shadow-lg w-full max-w-4xl p-8 relative">
+    
+                <!-- Main Content -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Left Column -->
+                    <div>
+                        <h1 class="text-2xl font-bold mb-6">Get in touch</h1>
+                        <p class="text-gray-600 text-md mb-8">
+                            Feel free to reach out to us! Whether you have questions, feedback, or just want to connect, we’d love to hear from you. Please fill out the form, and we’ll get back to you as soon as possible.
+                        </p>
+                        
+                        <div class="mt-12">
+                            <p class="text-gray-600 text-md mb-4">Feel free to get in touch with us via email or phone</p>
+
+                            <div class="flex items-center gap-2 max-sm:mb-4">
+                                <i class="ri-mail-line text-2xl"></i>
+                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                                    AAHARKOSH@GMAIL.COM
+                                </a>
+                            </div>
+
+                            <div class="flex items-center gap-2 max-md:mt-[-5vw]">
+                                <i class="ri-phone-line text-2xl"></i>
+                                <div class="text-sm">
+                                    <a href="+91 6521312315" class="cursor-pointer text-sm hover:text-[#FF570C] transition-all duration-300">
+                                        +91 6521312315
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Right Column - Form -->
+                    <form class="grid gap-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="First name" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
+                            <input type="text" placeholder="Last name" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
+                        </div>
+                        
+                        <input type="email" placeholder="Email address" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
+                        <input type="text" placeholder="Enter your subject" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
+                        
+                        
+                        
+                        <textarea placeholder="Message" rows="4" class="bg-white focus:outline-none resize-none text-sm rounded-lg p-3 w-full"></textarea>
+                        
+                        <!-- <select class="bg-gray-50 rounded-lg p-3 w-full text-gray-500">
+                            <option value="" disabled selected>What are you interested in?</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select> -->
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
+                            <button type="submit" class="bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] text-white px-8 py-2 rounded-lg hover:bg-emerald-500 transition-colors">
+                                Submit
+                            </button>
+                            <!-- <p class="text-sm text-gray-500">
+                                By clicking Submit you agree that neoverv GmbH can process your personal data as required for the information request. You have read the 
+                                <a href="#" class="text-emerald-400 hover:text-emerald-500">data protection statement</a>.
+                            </p> -->
+                        </div>
+                    </form>
                 </div>
             </div>
-    
-            <!-- Form Section -->
-            <div class="bg-white w-full md:w-[62%] p-8 mt-8 md:mt-0 rounded-xl shadow-md">
-                <form action="#" method="POST" class="space-y-4">
-                    <input type="text" placeholder="First Name" class="w-full border-b-[1px] text-sm border-black p-3 focus:outline-none">
-                        <input type="text" placeholder="Last Name" class="w-full border-b-[1px] text-sm border-black p-3 focus:outline-none">
-                    <input type="email" placeholder="Your Email" class="w-full text-sm border-b-[1px] border-black p-3 focus:outline-none">
-                    <input type="text" placeholder="Your Subject" class="w-full text-sm border-b-[1px] border-black p-3 focus:outline-none">
-                    <h4 class="ml-1 text-[#FF570C]">Message</h4>
-                    <textarea placeholder="Write here your message" class="w-full resize-none scrollbar-hidden overflow-hidden border-b-[1px] text-sm border-black p-3 h-16 focus:outline-none"></textarea>
-                </form>
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT US -->
+
+    <div id="aboutPage">
+        <div class="about grid md:grid-cols-2 gap-8 items-center py-12 pr-24 max-sm:mb-28 max-sm:pr-4 max-sm:mt-20 max-sm:p-4">
+            <!-- Left Section with Illustration -->
+            <div class="flex justify-center">
+                <div>
+                    <!-- Main Figure -->
+                    <img src="./images/aaharkosh-image-removebg-preview.png" alt="" class="w-[40vw] h-[85vh] max-sm:w-[150vw] max-sm:h-[50vh]">
+                </div>
+            </div>
+
+            <!-- Right Section with Content -->
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-4xl font-bold ">About Us</h1>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta accusantium error sit vel consequatur adipisci laboriosam dolorum reiciendis rem! Fuga, temporibus mollitia fugiat repellendus nesciunt exercitationem est, aspernatur aliquam repudiandae, corporis deserunt maiores laudantium facere tempore magni dolore rerum eius porro accusantium asperiores! Ipsam adipisci iusto saepe, sint distinctio nesciunt? Deserunt nam similique doloremque. Laborum nihil animi quo, maxime provident ea voluptatem dolorem modi vitae asperiores alias nostrum ducimus quos ut illo eaque labore qui cumque sunt iure! Deserunt accusamus praesentium quam modi mollitia omnis, harum voluptatibus consequatur sequi architecto quisquam nulla veritatis ipsam veniam officia totam molestiae illum esse.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold ">What we are not</h2>
+                    <p class="text-gray-600">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veniam nemo perferendis praesentium aperiam delectus porro doloribus aut, eius, impedit, tenetur quibusdam aspernatur ut hic mollitia accusantium molestias? Saepe, animi.
+                    </p>
+                </div>
+
+                <button class="w-full sm:w-auto px-8 py-3 rounded-xl bg-gradient-to-br from-[#FF6600] via-[#FF8847] to-[#FF570C] text-white font-medium hover:opacity-90 transition-opacity">
+                    Meet the team
+                </button>
             </div>
         </div>
     </div>
         
 
     <!-- OUR SUBSCRIBE -->
-
+<!-- 
     <div class="py-24 mt-[-5vw] max-md:mt-[-20vw]">
         <div class="container mx-auto text-center px-4">
-          <!-- Section Title -->
+          Section Title
           <h2 class="subscription-title text-3xl md:text-5xl font-black tracking-wide">Subscribe To Our <span class="text-[#FF570C]">Newsletter</span></h2>
           <p class="subscription-para text-gray-500 text-md md:text-md mt-6 max-w-lg mx-auto">We recommend you to subscribe to our newspaper, drop your email below to get daily updates about us.</p>
       
-          <!-- Subscription Form -->
+          Subscription Form
           <div class="mt-8 flex justify-center subscription-form">
             <form class="w-full max-w-lg flex flex-col sm:flex-row gap-4">
-              <!-- Input container -->
+              Input container
               <div class="flex w-full rounded-2xl shadow-md bg-[#FFE8D6] items-center py-3 px-5">
                 <input class="w-full text-sm max-sm:text-lg md:text-base bg-transparent focus:outline-none text-black placeholder-gray-500" type="email" placeholder="Enter your email address">
                 <button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 text-white text-xs md:text-lg py-2 px-5 ml-4 rounded-xl transition-colors hover:bg-orange-500 max-sm:py-2 max-sm:text-lg">Subscribe</button>
@@ -337,7 +412,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
 <!-- footer -->
 

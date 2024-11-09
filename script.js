@@ -4,31 +4,31 @@ function homepageAnimation(){
     opacity:0,
     stagger:0.5,
     y:30,
-    duration:0.8
+    duration:0.4
   })
   .from(".homepage-rightpart",{
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:30
   })
   .from(".left-head",{
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:30,
   })
   .from(".left-para",{
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:30,
   })
   .from(".left-btn",{
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:30,
   })
   .from(".icon",{
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:30,
     stagger:0.5
   })
@@ -74,7 +74,7 @@ function  servicePageAnimation(){
       document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
       Array.from(bulletContainer).forEach((bullet, index) => {
         bullet.classList.remove('bg-[#FFE8D6]');
-        bullet.classList.add('bg-[#FF570C]');
+        bullet.classList.add('bg-[#FF570C]')
         if (index === currentSlide){
             bullet.classList.remove('bg-[#FF570C]');
             bullet.classList.add('bg-[#FFE8D6]');  
@@ -163,20 +163,20 @@ function contactPageAnimation(){
       scrub:2
     }
   })
-  tl3.from(".contact-para",{
-    opacity:0,
-    stagger:1.5,
-    duration:0.8,
-    y:20,
-    scrollTrigger:{
-      trigger:".contact-para",
-      scroller:"body",
-      // markers:true,
-      start:"top 70%",
-      end:"top 50%",
-      scrub:2
-    }
-  })
+  // tl3.from(".contact-para",{
+  //   opacity:0,
+  //   stagger:1.5,
+  //   duration:0.8,
+  //   y:20,
+  //   scrollTrigger:{
+  //     trigger:".contact-para",
+  //     scroller:"body",
+  //     // markers:true,
+  //     start:"top 70%",
+  //     end:"top 50%",
+  //     scrub:2
+  //   }
+  // })
   tl3.from(".contact-box",{
     opacity:0,
     stagger:1.5,
@@ -194,52 +194,70 @@ function contactPageAnimation(){
 }
 contactPageAnimation()
 
-function subscribePageAnimation(){
-  var tl4 = gsap.timeline()
-  tl4.from(".subscription-title",{
+// function subscribePageAnimation(){
+//   var tl4 = gsap.timeline()
+//   tl4.from(".subscription-title",{
+//     opacity:0,
+//     stagger:1.5,
+//     duration:0.8,
+//     y:20,
+//     scrollTrigger:{
+//       trigger:".subscription-title",
+//       scroller:"body",
+//       // markers:true,
+//       start:"top 85%",
+//       end:"top 70%",
+//       scrub:2
+//     }
+//   })
+//   tl4.from(".subscription-para",{
+//     opacity:0,
+//     stagger:1.5,
+//     duration:0.8,
+//     y:20,
+//     scrollTrigger:{
+//       trigger:".subscription-para",
+//       scroller:"body",
+//       // markers:true,
+//       start:"top 85%",
+//       end:"top 70%",
+//       scrub:2
+//     }
+//   })
+//   tl4.from(".subscription-form",{
+//     opacity:0,
+//     stagger:1.5,
+//     duration:0.8,
+//     y:20,
+//     scrollTrigger:{
+//       trigger:".subscription-form",
+//       scroller:"body",
+//       // markers:true,
+//       start:"top 85%",
+//       end:"top 70%",
+//       scrub:2
+//     }
+//   })
+// }
+// subscribePageAnimation()
+
+function aboutPageAnimation(){
+  gsap.from(".about",{
     opacity:0,
     stagger:1.5,
     duration:0.8,
     y:20,
     scrollTrigger:{
-      trigger:".subscription-title",
+      trigger:".about",
       scroller:"body",
       // markers:true,
-      start:"top 85%",
-      end:"top 70%",
-      scrub:2
-    }
-  })
-  tl4.from(".subscription-para",{
-    opacity:0,
-    stagger:1.5,
-    duration:0.8,
-    y:20,
-    scrollTrigger:{
-      trigger:".subscription-para",
-      scroller:"body",
-      // markers:true,
-      start:"top 85%",
-      end:"top 70%",
-      scrub:2
-    }
-  })
-  tl4.from(".subscription-form",{
-    opacity:0,
-    stagger:1.5,
-    duration:0.8,
-    y:20,
-    scrollTrigger:{
-      trigger:".subscription-form",
-      scroller:"body",
-      // markers:true,
-      start:"top 85%",
-      end:"top 70%",
+      start:"top 60%",
+      end:"top 40%",
       scrub:2
     }
   })
 }
-subscribePageAnimation()
+aboutPageAnimation()
 
 function footerPageAnimation(){
   gsap.from(".footer-content",{

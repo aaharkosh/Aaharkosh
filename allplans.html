@@ -13,28 +13,31 @@
     <header id="app-header"></header>
 
 
-    <div class="container font-['poppins'] mx-auto px-16 max-sm:px-8 py-8">
-        <h1 class="text-5xl font-bold text-[#FF570C] text-center mb-12">ALL PLANS</h1>
+    <div class="container font-['poppins'] mx-auto px-16 max-sm:px-6 py-8">
+        <div class="  overflow-hidden flex items-center max-sm:flex-col shadow-lg py-6 mb-8 justify-center mt-20 gap-8" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+            <button id="vegBtn" class="w-[20vw] max-sm:w-[55vw] max-sm:gap-4 py-2 px-4 border border-[1px] border-gray-300 text-center font-semibold hover:text-white rounded-lg hover:bg-[#FF570C] transition-all duration-300">VEG</button>
+            <button id="nonVegBtn" class="w-[20vw] max-sm:w-[55vw] max-sm:gap-4 py-2 px-4 border border-[1px] border-gray-300 text-center font-semibold hover:text-white rounded-lg hover:bg-[#FF570C] transition-all duration-300">NON - VEG</button>
+            <button id="gymBtn" class="w-[20vw] max-sm:w-[55vw] max-sm:gap-4 py-2 px-4 border border-[1px] border-gray-300 text-center font-semibold hover:text-white rounded-lg hover:bg-[#FF570C] transition-all duration-300">GYM</button>
+        </div>
         
-        <div class="flex flex-col border-[1px] p-4 border-[#FF570C] rounded-lg md:flex-row gap-4">
+        <!-- <div class="flex flex-col border-[1px] p-4 border-[#FF570C] rounded-lg md:flex-row gap-4"> -->
             <!-- Sidebar -->
-            <div class="md:w-1/5 bg-[#FFE8D6] rounded-lg p-4">
+            <!-- <div class="md:w-1/5 rounded-lg">
                 <div class=" rounded-lg overflow-hidden">
-                    <button id="vegBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] hover:bg-[#FF570C] transition-all duration-300">VEG</button>
-                    <button id="nonVegBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">NON - VEG</button>
-                    <button id="gymBtn" class="w-full py-2 px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">GYM</button>
+                    <button id="vegBtn" class="w-full py-2 shadow-md px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] hover:bg-[#FF570C] transition-all duration-300">VEG</button>
+                    <button id="nonVegBtn" class="w-full py-2 shadow-md px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">NON - VEG</button>
+                    <button id="gymBtn" class="w-full py-2 shadow-md px-6 text-left font-semibold hover:text-white bg-white rounded-lg text-[#FF570C] mt-3 hover:bg-[#FF570C] transition-all duration-300">GYM</button>
                 </div>
-            </div>
-            <div class="w-[0.5px] bg-[#FF570C]"></div>
+            </div> -->
             <!-- Main Content -->
-            <div class="md:w-3/4">
+            <div class="max-sm:px-6">
                 <!-- Veg Section -->
                 <div id="vegSection" class="section-content">
-                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Veg Meal</h2>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="rounded-lg overflow-hidden shadow-md">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">Veg Meal</h2>
+                    <div class="flex items-center justify-between max-sm:flex-col max-sm:gap-8">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">BASIC VEG PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -49,9 +52,9 @@
                                 <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">STANDARD VEG PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -66,9 +69,9 @@
                                 <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">GOLD VEG PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -88,29 +91,12 @@
                 
                 <!-- Non-Veg Section -->
                 <div id="nonVegSection" class="section-content hidden">
-                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Non-veg Meal</h2>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">Non-veg Meal</h2>
+                    <div class="flex items-center justify-between">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
-                                <h2 class="text-xl font-extrabold mb-2">BASIC NON-VEG PLAN</h2>
-                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
-                                <h3 class="text-lg font-bold mb-2">Features</h3>
-                                <ul class="list-disc pl-5 mb-2 text-sm">
-                                <li>2 meals per day</li>
-                                <li>Customize your meal</li>
-                                <li>Special meal on weekend</li>
-                                </ul>
-                                <p class="text-sm text-gray-500 mb-6">
-                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
-                                </p>
-                                <a href="./standardplans.html"><a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a></a>
-                            </div>
-                        </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
-                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
-                                <h2 class="text-xl font-extrabold mb-2">STANDARD NON-VEG PLAN</h2>
+                            <div class="px-8 py-4">
+                                <h2 class="text-xl font-extrabold mb-2">BASIC NONVEG PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
                                 <ul class="list-disc pl-5 mb-2 text-sm">
@@ -124,10 +110,27 @@
                                 <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
-                                <h2 class="text-xl font-extrabold mb-2">GOLD NON-VEG PLAN</h2>
+                            <div class="px-8 py-4">
+                                <h2 class="text-xl font-extrabold mb-2">STANDARD NONVEG PLAN</h2>
+                                <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
+                                <h3 class="text-lg font-bold mb-2">Features</h3>
+                                <ul class="list-disc pl-5 mb-2 text-sm">
+                                <li>2 meals per day</li>
+                                <li>Customize your meal</li>
+                                <li>Special meal on weekend</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mb-6">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+                                </p>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
+                            </div>
+                        </div>
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
+                            <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
+                            <div class="px-8 py-4">
+                                <h2 class="text-xl font-extrabold mb-2">GOLD NONVEG PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
                                 <ul class="list-disc pl-5 mb-2 text-sm">
@@ -146,11 +149,11 @@
                 
                 <!-- Gym Section -->
                 <div id="gymSection" class="section-content hidden">
-                    <h2 class="text-2xl font-semibold mb-6 text-center text-[#FF570C]">Gym Meal</h2>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">Gym Meal</h2>
+                    <div class="flex items-center justify-between">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[80vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">BASIC GYM PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -165,9 +168,9 @@
                                 <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[75vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">STANDARD GYM PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -179,12 +182,12 @@
                                 <p class="text-sm text-gray-500 mb-6">
                                 Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
                                 </p>
-                                <button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
-                        <div class="bg-custom-beige rounded-lg overflow-hidden shadow-md">
+                        <div class="rounded-lg overflow-hidden w-[26vw] hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105 border rounded-xl border-[#FF570C] max-sm:w-[75vw] shadow-md">
                             <img src="./foodimage.avif" alt="Veg Meal" class="w-full h-56 object-cover">
-                            <div class="p-6">
+                            <div class="px-8 py-4">
                                 <h2 class="text-xl font-extrabold mb-2">GOLD GYM PLAN</h2>
                                 <p class="text-md font-semibold mb-4">$15.22 <span class="text-sm font-semibold">/ MONTH</span></p>
                                 <h3 class="text-lg font-bold mb-2">Features</h3>
@@ -196,7 +199,7 @@
                                 <p class="text-sm text-gray-500 mb-6">
                                 Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
                                 </p>
-                                <button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button>
+                                <a href="./standardplans.html"><button class="bg-gradient-to-tl from-[#FF570C] to-orange-400 hover:bg-white text-sm text-white px-6 py-3 rounded-xl shadow hover:bg-orange-500 transition duration-300">BUY NOW</button></a>
                             </div>
                         </div>
                     </div>

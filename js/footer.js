@@ -2,8 +2,8 @@ let appfooter = `
     
     <!-- FOOTER-SECTION -->
 
-    <footer class="bg-[#FFE8D6] px-4 mt-12 w-full overflow-hidden">
-        <div class="container mx-auto p-6 px-12 pt-6 max-md:p-6 max-lg:p-12 footer-content">
+    <footer class="bg-[#FFE8D6] font-['poppins'] mt-12  w-full overflow-hidden">
+        <div class="container mx-auto py-6 px-10 pt-6 max-md:p-6 max-lg:p-12 footer-content">
             <div class="flex max-md:flex-col max-lg:flex-col justify-center">
                 <!-- First Column -->
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6">
@@ -28,7 +28,7 @@ let appfooter = `
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 md:p-6 max-md:ml-4 max-md:mt-8 flex flex-col">
                     <h4 class="font-semibold text-lg max-md:text-lg max-lg:text-3xl">Company</h4>
                     <a class="text-sm max-lg:text-xl max-md:text-sm max-lg:mt-4 mt-2 cursor-pointer relative after:content-[''] after:absolute after:w-28 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Why Aaharkosh?</a>
-                    <a class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-16 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">About us</a>
+                    <a href="#aboutPage" class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-16 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">About us</a>
                     <a href="./faqs.html" class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-8 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">FAQs</a>
                 </div>
                 <!-- third column -->
@@ -41,7 +41,7 @@ let appfooter = `
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex flex-col">
                     <h4 class="font-black text-lg max-lg:text-3xl max-md:text-lg">Support</h4>
                     <a class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-28 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-allr">Support center</a>
-                    <a class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-[4.5vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Feedback</a>
+                    <a href="./feedback.html" class="text-sm mt-1 max-lg:text-xl max-md:text-sm cursor-pointer relative after:content-[''] after:absolute after:w-[4.5vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Feedback</a>
                     <a href="#contactPage" class="text-sm max-sm:text-sm mt-1 max-lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-16 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Contacts</a>
                 </div>
                 <!-- Fifth Column -->
