@@ -172,19 +172,19 @@ function updateMealDisplay() {
 
 function updateActiveButtons() {
     document.querySelectorAll('#meal-buttons button').forEach(btn => {
-        btn.classList.toggle('bg-[#FF570C]', parseInt(btn.dataset.meals) === selectedMealPlan);
+        btn.classList.toggle('bg-[#FF9D5C]', parseInt(btn.dataset.meals) === selectedMealPlan);
         btn.classList.toggle('text-white', parseInt(btn.dataset.meals) === selectedMealPlan);
         btn.classList.toggle('bg-[#FFE8D6]', parseInt(btn.dataset.meals) !== selectedMealPlan);
     });
 
     document.querySelectorAll('#meal-type-buttons button').forEach(btn => {
-        btn.classList.toggle('bg-[#FF570C]', btn.dataset.type === selectedMealType);
+        btn.classList.toggle('bg-[#FF9D5C]', btn.dataset.type === selectedMealType);
         btn.classList.toggle('text-white', btn.dataset.type === selectedMealType);
         btn.classList.toggle('bg-[#FFE8D6]', btn.dataset.type !== selectedMealType);
     });
 
     document.querySelectorAll('#day-buttons button').forEach(btn => {
-        btn.classList.toggle('bg-[#FF570C]', btn.dataset.day === selectedDay);
+        btn.classList.toggle('bg-[#FF9D5C]', btn.dataset.day === selectedDay);
         btn.classList.toggle('text-white', btn.dataset.day === selectedDay);
         btn.classList.toggle('bg-[#FFE8D6]', btn.dataset.day !== selectedDay);
     });
@@ -204,7 +204,7 @@ function selectMealType(type) {
 
 function selectDay(day) {
     selectedDay = day;
-    document.getElementById('selected-day').textContent = `${day} Meals`;
+    // document.getElementById('selected-day').textContent = `${day} Meals`;
     updateMealDisplay();
     updateActiveButtons();
 }
