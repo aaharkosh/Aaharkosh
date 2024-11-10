@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="font-['poppins']">
+
+    <!-- Header -->
+    <header id="app-header"></header>
+
+    <div class="bg-white mt-10 max-sm:mt-20 rounded-xl">
+        <div class="h-[50vh] max-sm:px-6 max-sm:h-36 flex items-center w-full px-16 bg-[#FFE8D6] ">
+            <h1 class="text-3xl md:text-5xl font-semibold text-center mb-4 md:mb-6">Standard Plans</h1>
+        </div>
+    
+        <!-- <div class="px-24">
+            <div class="w-full px-6 rounded-lg mt-8 md:mt-12 overflow-hidden">
+                <div class="relative">
+                    <div class="flex animate-[slide_15s_linear_infinite]">
+                     
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-none w-full sm:w-1/2 md:w-1/3 px-1">
+                            <div class="bg-white rounded-lg overflow-hidden">
+                                <img src="./foodimage.avif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+        <!-- Plan Features -->
+        <div class="flex flex-col px-16 max-sm:px-6 gap-4 mt-8 md:mt-12 mb-4 md:mb-6">
+            <h1 class="text-xl md:text-xl font-semibold">Plans Features</h1>
+            <div>
+                <p class="flex gap-2 items-center"><span class="text-lg md:text-xl">•</span> 2 meal per day</p>
+                <p class="flex gap-2 items-center"><span class="text-lg md:text-xl">•</span> Customize your meal</p>
+                <p class="flex gap-2 items-center"><span class="text-lg md:text-xl">•</span> Special meal on weekend</p>
+            </div>
+            <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, modi.</p>
+        </div>
+
+            <div class="px-16 mb-8 max-sm:px-6">
+                <h1 class="text-xl font-semibold mb-6">Meal Type</h1>
+                <div class="flex space-x-4" id="meal-type-buttons">
+                    <button class="px-3 md:px-4 py-2  rounded-lg bg-[#FFE8D6] gap-2 flex items-center duration-300 ease-in-out" data-type="veg"><img class="h-6" src="./images/icons8-veg-48.png" alt=""> Veg</button>
+                    <button class="px-3 md:px-4 py-2  rounded-lg bg-[#FFE8D6] gap-2 flex items-center duration-300 ease-in-out transition duration-300" data-type="non-veg"><img class="h-6" src="./images/icons8-non-vegetarian-food-symbol-48.png" alt=""> Non-veg</button>
+                </div>
+            </div>
+    
+            <div class="px-16 mb-8 max-sm:px-6">
+                <h1 class="text-xl font-semibold mb-6">Meal Frequency</h1>
+                <div class="flex space-x-4" id="meal-buttons">
+                    <button class="px-4 py-2 rounded-lg bg-[#FFE8D6] " data-meals="1">1 Meal</button>
+                    <button class="px-4 py-2 rounded-lg bg-[#FFE8D6] " data-meals="2">2 Meals</button>
+                    <button class="px-4 py-2 rounded-lg bg-[#FFE8D6]  text-white transition duration-300" data-meals="3">3 Meals</button>
+                </div>
+            </div>
+        
+
+    <div class="mb-20 px-16 max-sm:px-6">
+        <h1 class="text-xl font-semibold mb-6">Weekly Schedule</h1>
+        <div class="bg-[#FFE8D6] rounded-lg shadow-md p-6">
+            <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-2 mb-6" id="day-buttons">
+                <button class="p-2 rounded-lg bg-white  text-white transition duration-300" data-day="Monday">Monday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Tuesday">Tuesday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Wednesday">Wednesday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Thursday">Thursday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Friday">Friday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Saturday">Saturday</button>
+                <button class="p-2 rounded-lg bg-white " data-day="Sunday">Sunday</button>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-4" id="selected-day"></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="meal-display">
+                <!-- Meal items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+
+    <footer id="app-footer"></footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/footer.js"></script>     
+
+    <!-- <script>
+        let selectedMealPlan = 3;
+        let selectedDay = 'Monday';
+
+        const weeklyMealPlans = {
+            1: {
+                Monday: { dinner: 'Grilled Chicken with Roasted Vegetables' },
+                Tuesday: { dinner: 'Baked Salmon with Quinoa' },
+                Wednesday: { dinner: 'Vegetarian Stir-Fry with Tofu' },
+                Thursday: { dinner: 'Slow Cooker Beef Stew' },
+                Friday: { dinner: 'Homemade Pizza with Mixed Greens' },
+                Saturday: { dinner: 'Grilled Steak with Sweet Potato Mash' },
+                Sunday: { dinner: 'Roast Turkey with Stuffing' }
+            },
+            2: {
+                Monday: { lunch: 'Greek Salad', dinner: 'Spaghetti Bolognese' },
+                Tuesday: { lunch: 'Chicken Caesar Wrap', dinner: 'Vegetable Curry with Rice' },
+                Wednesday: { lunch: 'Tomato Soup with Grilled Cheese', dinner: 'Grilled Fish Tacos' },
+                Thursday: { lunch: 'Quinoa Bowl with Avocado', dinner: 'Chicken Parmesan' },
+                Friday: { lunch: 'Tuna Salad Sandwich', dinner: 'Beef Stir-Fry with Noodles' },
+                Saturday: { lunch: 'Vegetable Quiche', dinner: 'BBQ Ribs with Coleslaw' },
+                Sunday: { lunch: 'Brunch Platter', dinner: 'Roast Chicken with Potatoes' }
+            },
+            3: {
+                Monday: { breakfast: 'Oatmeal with Berries', lunch: 'Chicken Salad', dinner: 'Baked Cod with Lemon' },
+                Tuesday: { breakfast: 'Scrambled Eggs on Toast', lunch: 'Vegetable Soup', dinner: 'Beef Tacos' },
+                Wednesday: { breakfast: 'Greek Yogurt with Granola', lunch: 'Turkey and Avocado Sandwich', dinner: 'Vegetarian Lasagna' },
+                Thursday: { breakfast: 'Breakfast Burrito', lunch: 'Cobb Salad', dinner: 'Grilled Pork Chops' },
+                Friday: { breakfast: 'Smoothie Bowl', lunch: 'Caprese Panini', dinner: 'Shrimp Scampi' },
+                Saturday: { breakfast: 'Pancakes with Maple Syrup', lunch: 'Club Sandwich', dinner: 'Homemade Sushi Rolls' },
+                Sunday: { breakfast: 'Eggs Benedict', lunch: 'Antipasto Platter', dinner: 'Roast Beef with Yorkshire Pudding' }
+            }
+        };
+
+        function selectMealPlan(plan) {
+            selectedMealPlan = plan;
+            updateMealList();
+            updateActiveButtons();
+        }
+
+        function selectDay(day) {
+            selectedDay = day;
+            document.getElementById('selected-day').textContent = `${day} Meals`;
+            updateMealList();
+            updateActiveButtons();
+        }
+
+        function updateMealList() {
+            const mealList = document.getElementById('meal-list');
+            mealList.innerHTML = '';
+            const meals = weeklyMealPlans[selectedMealPlan][selectedDay];
+            for (const [mealTime, dish] of Object.entries(meals)) {
+                const mealItem = document.createElement('div');
+                mealItem.className = 'p-3 bg-white w-auto text-gray-400 max-sm:text-sm rounded-lg shadow transition-all duration-300 hover:shadow-md';
+                mealItem.innerHTML = `<span class="font-bold text-black flex">${mealTime.charAt(0).toUpperCase() + mealTime.slice(1)}:</span> ${dish}`;
+                mealList.appendChild(mealItem);
+            }
+        }
+
+        function updateActiveButtons() {
+            document.querySelectorAll('#meal-buttons button').forEach((btn) => {
+                btn.classList.toggle('bg-[#FF570C]', parseInt(btn.dataset.meals) === selectedMealPlan);
+                btn.classList.toggle('text-white', parseInt(btn.dataset.meals) === selectedMealPlan);
+                btn.classList.toggle('bg-[#FFE8D6]', parseInt(btn.dataset.meals) !== selectedMealPlan);
+            });
+            document.querySelectorAll('#day-buttons button').forEach((btn) => {
+                btn.classList.toggle('bg-[#FF570C]', btn.dataset.day === selectedDay);
+                btn.classList.toggle('text-white', btn.dataset.day === selectedDay);
+                btn.classList.toggle('bg-[#FFE8D6]', btn.dataset.day !== selectedDay);
+            });
+        }
+
+        // Add event listeners
+        document.querySelectorAll('#meal-buttons button').forEach((btn) => {
+            btn.addEventListener('click', () => selectMealPlan(parseInt(btn.dataset.meals)));
+        });
+
+        document.querySelectorAll('#day-buttons button').forEach((btn) => {
+            btn.addEventListener('click', () => selectDay(btn.dataset.day));
+        });
+
+        // Initialize the planner
+        selectMealPlan(3);
+        selectDay('Monday');
+    </script> -->
+
+
+
+    
+
+
+
+</body>
+</html>

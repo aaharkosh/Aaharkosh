@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="font-['poppins']">
+
+    <!-- NAVBAR -->
+
+    <header id="app-header"></header>
+
+
+    <!-- faqs -->
+    
+    <div class="py-8 w-full flex flex-col items-center justify-center">
+        <div class="h-52 mt-12 mb-20 px-16 max-sm:px-4 max-sm:h-36 flex flex-col justify-center  w-full bg-[#FFE8D6]">
+            <h1 class="text-4xl max-sm:text-2xl w-full font-semibold">FREQUENTLY ASKED QUESTIONS (FAQs)</h1>
+            <div class="flex items-center">
+                <input class=" px-4 py-2 max-sm:py-1 rounded-lg max-lg:w-[45vw] max-lg:py-4 mt-4 shadow-sm w-[20vw] max-md:w-[70vw] focus:outline-none border-[1px]" type="text" placeholder="Enter your question">
+                <i class="ri-search-line ml-[-2vw] max-md:ml-[-7vw] max-lg:ml-[-5vw] mt-4 text-lg text-gray-400 cursor-pointer"></i>
+            </div>
+        </div>
+
+        <section class="max-w-4xl mx-auto flex flex-col items-center">
+            <!-- <h2 class="text-4xl font-semibold text-center">Frequently Asked Questions <span class="text-[#FF570C]">(FAQs)</span></h2> -->
+
+            <!-- <p class="text-center max-md:w-[80vw] mt-8 max-lg:text-xl max-md:text-sm">If you have any query, you can ask us from here</p> -->
+            
+            
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="p-4 w-[50vw] max-md:w-[88vw] max-lg:w-[82vw] border border-[#FF570C] shadow-sm rounded-lg cursor-pointer hover:bg-orange-50 transition-all duration-300">
+                    <h3 class="flex justify-between items-center font-medium text-lg text-gray-700">
+                        What is your refund policy?
+                        <span class="text-2xl transform-all rotate-0 transition duration-400"><i class="ri-arrow-down-s-line"></i></span>
+                    </h3>
+                    <p class="mt-3 text-gray-600 hidden border-t-[1px] border-[#FF570C] pt-4">
+                        Our refund policy allows for returns within 30 days of purchase. Please ensure the items are in their original condition.
+                    </p>
+                </div>
+                <!-- Question 2 -->
+                <div class="p-4 w-[50vw] max-md:w-[88vw] max-lg:w-[82vw] border border-[#FF570C] shadow-sm rounded-lg cursor-pointer hover:bg-orange-50 transition-all duration-300">
+                    <h3 class="flex justify-between items-center font-medium text-lg text-gray-700">
+                        What is your refund policy?
+                        <span class="text-2xl transform-all rotate-0 transition duration-400"><i class="ri-arrow-down-s-line"></i></span>
+                    </h3>
+                    <p class="mt-3 text-gray-600 hidden border-t-[1px] border-[#FF570C] pt-4">
+                        Our refund policy allows for returns within 30 days of purchase. Please ensure the items are in their original condition.
+                    </p>
+                </div>
+                <!-- Question 3 -->
+                <div class="p-4 w-[50vw] max-md:w-[88vw] max-lg:w-[82vw] border border-[#FF570C] shadow-sm rounded-lg cursor-pointer hover:bg-orange-50 transition-all duration-300">
+                    <h3 class="flex justify-between items-center font-medium text-lg text-gray-700">
+                        What is your refund policy?
+                        <span class="text-2xl transform-all rotate-0 transition duration-400"><i class="ri-arrow-down-s-line"></i></span>
+                    </h3>
+                    <p class="mt-3 text-gray-600 hidden border-t-[1px] border-[#FF570C] pt-4">
+                        Our refund policy allows for returns within 30 days of purchase. Please ensure the items are in their original condition.
+                    </p>
+                </div>
+                <!-- Question 4 -->
+                <div class="p-4 w-[50vw] max-md:w-[88vw] max-lg:w-[82vw] border border-[#FF570C] shadow-sm rounded-lg cursor-pointer hover:bg-orange-50 transition-all duration-300">
+                    <h3 class="flex justify-between items-center font-medium text-lg text-gray-700">
+                        What is your refund policy?
+                        <span class="text-2xl transform-all rotate-0 transition duration-400"><i class="ri-arrow-down-s-line"></i></span>
+                    </h3>
+                    <p class="mt-3 text-gray-600 hidden border-t-[1px] border-[#FF570C] pt-4">
+                        Our refund policy allows for returns within 30 days of purchase. Please ensure the items are in their original condition.
+                    </p>
+                </div>
+                <!-- Question 5 -->
+                <div class="p-4 w-[50vw] max-md:w-[88vw] max-lg:w-[82vw] border border-[#FF570C] shadow-sm rounded-lg cursor-pointer hover:bg-orange-50 transition-all duration-300">
+                    <h3 class="flex justify-between items-center font-medium text-lg text-gray-700">
+                        What is your refund policy?
+                        <span class="text-2xl transform-all rotate-0 transition duration-400"><i class="ri-arrow-down-s-line"></i></span>
+                    </h3>
+                    <p class="mt-3 text-gray-600 hidden border-t-[1px] border-[#FF570C] pt-4">
+                        Our refund policy allows for returns within 30 days of purchase. Please ensure the items are in their original condition.
+                    </p>
+                </div>
+    
+                
+            </div>
+        </section>
+        
+
+        <script>
+            // FAQ Accordion Toggle Script
+            document.querySelectorAll('.p-4').forEach(item => {
+                item.addEventListener('click', () => {
+                    const answer = item.querySelector('p');
+                    const arrow = item.querySelector('span');
+    
+                    answer.classList.toggle('hidden');
+                    arrow.classList.toggle('rotate-180');
+                });
+            });
+        </script>
+
+    </div>
+
+    <!-- FOOTER-SECTION -->
+
+    <footer id="app-footer"></footer>
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>     
+
+
+</body>
+</html>
