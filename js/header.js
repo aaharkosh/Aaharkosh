@@ -1,9 +1,9 @@
 let appHeader = `
 
     <!-- NAVBAR -->
-    <div class="fixed font-['poppins'] top-0 w-full bg-white z-50">
+    <div class="font-['poppins'] top-0 w-full bg-white z-50">
         <!-- Navigation Bar -->
-        <div class="navbar max-sm:py-6 shadow-md flex items-center justify-between px-6 md:px-16 md:py-5">
+        <div class="navbar max-sm:py-6 flex items-center justify-between px-6 md:px-16 md:py-5">
             <!-- Logo -->
             <div>
                 <img class="h-8" src="./AaharKosh_logo.jpg" alt="AaharKosh Logo">
@@ -51,6 +51,9 @@ let appHeader = `
     </div>
 
 `;
+
+
+
 
 
 document.getElementById("app-header").innerHTML = appHeader;

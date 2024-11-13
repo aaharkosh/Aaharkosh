@@ -8,32 +8,50 @@ function homepageAnimation(){
   })
   .from(".homepage-rightpart",{
     opacity:0,
-    duration:0.4,
+    duration:0.6,
     y:30
   })
   .from(".left-head",{
     opacity:0,
-    duration:0.4,
+    duration:0.6,
     y:30,
   })
   .from(".left-para",{
     opacity:0,
-    duration:0.4,
+    duration:0.6,
     y:30,
   })
   .from(".left-btn",{
     opacity:0,
-    duration:0.4,
+    duration:0.6,
     y:30,
   })
   .from(".icon",{
     opacity:0,
-    duration:0.4,
+    duration:0.6,
     y:30,
     stagger:0.5
   })
 }
 homepageAnimation()
+
+function whatwedoPageAnimation(){
+  gsap.from(".whatwedo",{
+    opacity:0,
+    stagger:1.5,
+    duration:0.8,
+    y:20,
+    scrollTrigger:{
+      trigger:".whatwedo",
+      scroller:"body",
+      // markers:true,
+      start:"top 60%",
+      end:"top 40%",
+      scrub:2
+    }
+  })
+}
+whatwedoPageAnimation()
 
 function  servicePageAnimation(){
   var tl1 = gsap.timeline()
@@ -66,38 +84,51 @@ function  servicePageAnimation(){
     }
   })
 
+
+
   const slides = document.querySelectorAll("#slider-container > div");
-    const bulletContainer = document.getElementById("bullet-container").children;
-    let currentSlide = 0;
+const bulletContainer = document.getElementById("bullet-container").children;
+let currentSlide = 0;
+const maxSlides = 10;  // Limit to 10 slides
 
-    function updateSlider() {
-      document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
-      Array.from(bulletContainer).forEach((bullet, index) => {
-        bullet.classList.remove('bg-[#FFE8D6]');
-        bullet.classList.add('bg-[#FF570C]')
-        if (index === currentSlide){
-            bullet.classList.remove('bg-[#FF570C]');
-            bullet.classList.add('bg-[#FFE8D6]');  
-        };
-      });
+function updateSlider() {
+  // Transform the slide container to show the current slide
+  document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  // Update bullet styles to highlight the active slide
+  Array.from(bulletContainer).forEach((bullet, index) => {
+    bullet.classList.remove('bg-[#FFE8D6]');
+    bullet.classList.add('bg-[#FF570C]');
+    if (index === currentSlide) {
+      bullet.classList.remove('bg-[#FF570C]');
+      bullet.classList.add('bg-[#FFE8D6]');
     }
+  });
+}
 
-    document.getElementById("prevSlide").addEventListener("click", () => {
-      currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-      updateSlider();
-    });
+document.getElementById("prevSlide").addEventListener("click", () => {
+  // Navigate to the previous slide, wrapping around if needed
+  currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
+  updateSlider();
+});
 
-    document.getElementById("nextSlide").addEventListener("click", () => {
-      currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-      updateSlider();
-    });
+document.getElementById("nextSlide").addEventListener("click", () => {
+  // Navigate to the next slide, wrapping around if needed
+  currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
+  updateSlider();
+});
 
-    Array.from(bulletContainer).forEach((bullet, index) => {
-      bullet.addEventListener("click", () => {
-        currentSlide = index;
-        updateSlider();
-      });
-    });
+// Allow bullets to navigate to the corresponding slide
+Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
+  bullet.addEventListener("click", () => {
+    currentSlide = index;
+    updateSlider();
+  });
+});
+
+
+
+
 }
 servicePageAnimation()
 
@@ -147,6 +178,39 @@ function  planPageAnimation(){
 } 
 planPageAnimation()
 
+function whyaaharkoshPageAnimation(){
+  var tl4 = gsap.timeline()
+  tl4.from("#why-choose-us",{
+    opacity:0,
+    stagger:1.5,
+    duration:0.8,
+    y:20,
+    scrollTrigger:{
+      trigger:"#why-choose-us",
+      scroller:"body",
+      // markers:true,
+      start:"top 60%",
+      end:"top 40%",
+      scrub:2
+    }
+  })
+  tl4.from("#testimonials",{
+    opacity:0,
+    stagger:1.5,
+    duration:0.8,
+    y:20,
+    scrollTrigger:{
+      trigger:"#testimonials",
+      scroller:"body",
+      // markers:true,
+      start:"top 60%",
+      end:"top 40%",
+      scrub:2
+    }
+  })
+}
+whyaaharkoshPageAnimation()
+
 function contactPageAnimation(){
   var tl3 = gsap.timeline()
   tl3.from(".contact-head",{
@@ -193,53 +257,6 @@ function contactPageAnimation(){
   })
 }
 contactPageAnimation()
-
-// function subscribePageAnimation(){
-//   var tl4 = gsap.timeline()
-//   tl4.from(".subscription-title",{
-//     opacity:0,
-//     stagger:1.5,
-//     duration:0.8,
-//     y:20,
-//     scrollTrigger:{
-//       trigger:".subscription-title",
-//       scroller:"body",
-//       // markers:true,
-//       start:"top 85%",
-//       end:"top 70%",
-//       scrub:2
-//     }
-//   })
-//   tl4.from(".subscription-para",{
-//     opacity:0,
-//     stagger:1.5,
-//     duration:0.8,
-//     y:20,
-//     scrollTrigger:{
-//       trigger:".subscription-para",
-//       scroller:"body",
-//       // markers:true,
-//       start:"top 85%",
-//       end:"top 70%",
-//       scrub:2
-//     }
-//   })
-//   tl4.from(".subscription-form",{
-//     opacity:0,
-//     stagger:1.5,
-//     duration:0.8,
-//     y:20,
-//     scrollTrigger:{
-//       trigger:".subscription-form",
-//       scroller:"body",
-//       // markers:true,
-//       start:"top 85%",
-//       end:"top 70%",
-//       scrub:2
-//     }
-//   })
-// }
-// subscribePageAnimation()
 
 function choosePageAnimation(){
   gsap.from(".choose",{

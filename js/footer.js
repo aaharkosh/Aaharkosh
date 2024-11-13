@@ -2,13 +2,12 @@ let appfooter = `
     
     <!-- FOOTER-SECTION -->
 
-    <footer class="bg-[#FFE8D6] font-['poppins'] mt-12  w-full overflow-hidden">
+    <footer class="bg-[#FFE8D6] font-['poppins'] w-full overflow-hidden">
         <div class="container mx-auto py-6 px-10 pt-6 max-md:p-6 max-lg:p-12 footer-content">
             <div class="flex max-md:flex-col max-lg:flex-col justify-center">
                 <!-- First Column -->
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6">
                     <img class="h-8 max-lg:h-12 max-md:h-8" src="./AaharKosh_logo.jpg" alt="">
-                    <p class="leading-tight w-full max-md:w-60 mt-5 text-sm max-md:text-sm max-lg:text-xl">We will fill your tummy with delicious food with fast delivery.</p>
                     <div class="flex gap-3 mt-5">
                         <button class="text-lg px-2 py-1 shadow-md rounded-xl cursor-pointer bg-white transition duration-300 ease-in-out hover:scale-110">
                             <i class="ri-twitter-fill"></i>
