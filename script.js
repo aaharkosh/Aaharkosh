@@ -1,39 +1,39 @@
-function homepageAnimation(){
-  var tl = gsap.timeline()
-  tl.from(".navbar",{
-    opacity:0,
-    stagger:0.5,
-    y:30,
-    duration:0.4
-  })
-  .from(".homepage-rightpart",{
-    opacity:0,
-    duration:0.6,
-    y:30
-  })
-  .from(".left-head",{
-    opacity:0,
-    duration:0.6,
-    y:30,
-  })
-  .from(".left-para",{
-    opacity:0,
-    duration:0.6,
-    y:30,
-  })
-  .from(".left-btn",{
-    opacity:0,
-    duration:0.6,
-    y:30,
-  })
-  .from(".icon",{
-    opacity:0,
-    duration:0.6,
-    y:30,
-    stagger:0.5
-  })
-}
-homepageAnimation()
+// function homepageAnimation(){
+//   var tl = gsap.timeline()
+//   tl.from(".navbar",{
+//     opacity:0,
+//     stagger:0.5,
+//     y:30,
+//     duration:0.4
+//   })
+//   .from(".homepage-rightpart",{
+//     opacity:0,
+//     duration:0.6,
+//     y:30
+//   })
+//   .from(".left-head",{
+//     opacity:0,
+//     duration:0.6,
+//     y:30,
+//   })
+//   .from(".left-para",{
+//     opacity:0,
+//     duration:0.6,
+//     y:30,
+//   })
+//   .from(".left-btn",{
+//     opacity:0,
+//     duration:0.6,
+//     y:30,
+//   })
+//   .from(".icon",{
+//     opacity:0,
+//     duration:0.6,
+//     y:30,
+//     stagger:0.5
+//   })
+// }
+// homepageAnimation()
 
 function whatwedoPageAnimation(){
   gsap.from(".whatwedo",{
@@ -86,46 +86,82 @@ function  servicePageAnimation(){
 
 
 
-  const slides = document.querySelectorAll("#slider-container > div");
+//   const slides = document.querySelectorAll("#slider-container > div");
+// const bulletContainer = document.getElementById("bullet-container").children;
+// let currentSlide = 0;
+// const maxSlides = 10;  // Limit to 10 slides
+
+// function updateSlider() {
+//   // Transform the slide container to show the current slide
+//   document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
+
+//   // Update bullet styles to highlight the active slide
+//   Array.from(bulletContainer).forEach((bullet, index) => {
+//     bullet.classList.remove('bg-[#FFE8D6]');
+//     bullet.classList.add('bg-[#FF570C]');
+//     if (index === currentSlide) {
+//       bullet.classList.remove('bg-[#FF570C]');
+//       bullet.classList.add('bg-[#FFE8D6]');
+//     }
+//   });
+// }
+
+// document.getElementById("prevSlide").addEventListener("click", () => {
+//   // Navigate to the previous slide, wrapping around if needed
+//   currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
+//   updateSlider();
+// });
+
+// document.getElementById("nextSlide").addEventListener("click", () => {
+//   // Navigate to the next slide, wrapping around if needed
+//   currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
+//   updateSlider();
+// });
+
+// // Allow bullets to navigate to the corresponding slide
+// Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
+//   bullet.addEventListener("click", () => {
+//     currentSlide = index;
+//     updateSlider();
+//   });
+// });
+
+
+const slides = document.querySelectorAll("#slider-container > div");
 const bulletContainer = document.getElementById("bullet-container").children;
 let currentSlide = 0;
 const maxSlides = 10;  // Limit to 10 slides
 
 function updateSlider() {
-  // Transform the slide container to show the current slide
-  document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
+    document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
 
-  // Update bullet styles to highlight the active slide
-  Array.from(bulletContainer).forEach((bullet, index) => {
-    bullet.classList.remove('bg-[#FFE8D6]');
-    bullet.classList.add('bg-[#FF570C]');
-    if (index === currentSlide) {
-      bullet.classList.remove('bg-[#FF570C]');
-      bullet.classList.add('bg-[#FFE8D6]');
-    }
-  });
+    // Update bullet styles
+    Array.from(bulletContainer).forEach((bullet, index) => {
+        bullet.classList.remove('bg-[#FFE8D6]');
+        bullet.classList.add('bg-[#FF570C]');
+        if (index === currentSlide) {
+            bullet.classList.remove('bg-[#FF570C]');
+            bullet.classList.add('bg-[#FFE8D6]');
+        }
+    });
 }
 
 document.getElementById("prevSlide").addEventListener("click", () => {
-  // Navigate to the previous slide, wrapping around if needed
-  currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
-  updateSlider();
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
+    updateSlider();
 });
 
 document.getElementById("nextSlide").addEventListener("click", () => {
-  // Navigate to the next slide, wrapping around if needed
-  currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
-  updateSlider();
-});
-
-// Allow bullets to navigate to the corresponding slide
-Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
-  bullet.addEventListener("click", () => {
-    currentSlide = index;
+    currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
     updateSlider();
-  });
 });
 
+Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
+    bullet.addEventListener("click", () => {
+        currentSlide = index;
+        updateSlider();
+    });
+});
 
 
 
