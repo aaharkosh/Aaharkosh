@@ -34,13 +34,13 @@ let appHeader = `
         </div>
     
         <!-- Mobile Menu (Full-screen Overlay) -->
-        <div id="mobile-menu" class="fixed inset-0 bg-[#FFE8D6] z-50 flex flex-col p-5 pt-20 space-y-8 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
+        <div id="mobile-menu" class="fixed inset-0 bg-gray-100 z-50 flex flex-col p-5 pt-20 space-y-4 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
             <!-- Close Icon -->
            <div>
                 <div>
-                    <img class="h-8 absolute top-6 left-6" src="./AaharKosh_logo.jpg" alt="AaharKosh Logo">
+                    <img class="h-8 absolute top-10 left-6" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
                 </div>
-                <button id="close-menu" class="absolute top-6 right-6 text-4xl focus:outline-none">
+                <button id="close-menu" class="absolute top-8 right-6 text-4xl focus:outline-none">
                     <i class="ri-close-line"></i>
                 </button>
            </div>
