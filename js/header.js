@@ -1,7 +1,7 @@
 let appHeader = `
 
     <!-- NAVBAR -->
-    <div class="font-['poppins'] top-0 w-full bg-white z-50">
+    <div class=" top-0 w-full bg-white z-50">
         <!-- Navigation Bar -->
         <div class="navbar max-sm:py-6 flex items-center justify-between px-6 md:px-16 md:py-5">
             <!-- Logo -->
