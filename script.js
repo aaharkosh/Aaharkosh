@@ -53,120 +53,120 @@
 // }
 // whatwedoPageAnimation()
 
-// function  servicePageAnimation(){
-//   var tl1 = gsap.timeline()
-//   tl1.from(".service-head",{
-//     opacity:0,
-//     stagger:1.5,
-//     duration:0.8,
-//     y:20,
-//     scrollTrigger:{
-//       trigger:".service-head",
-//       scroller:"body",
-//       // markers:true,
-//       start:"top 70%",
-//       end:"top 50%",
-//       scrub:2
-//     }
-//   })
-//   tl1.from("#creative-slider",{
-//     opacity:0,
-//     stagger:0.5,
-//     duration:1,
-//     y:70,
-//     scrollTrigger:{
-//       trigger:"#creative-slider",
-//       scroller:"body",
-//       // markers:true,
-//       start:"top 70%",
-//       end:"top 50%",
-//       scrub:2
-//     }
-//   })
+function  servicePageAnimation(){
+  // var tl1 = gsap.timeline()
+  // tl1.from(".service-head",{
+  //   opacity:0,
+  //   stagger:1.5,
+  //   duration:0.8,
+  //   y:20,
+  //   scrollTrigger:{
+  //     trigger:".service-head",
+  //     scroller:"body",
+  //     // markers:true,
+  //     start:"top 70%",
+  //     end:"top 50%",
+  //     scrub:2
+  //   }
+  // })
+  // tl1.from("#creative-slider",{
+  //   opacity:0,
+  //   stagger:0.5,
+  //   duration:1,
+  //   y:70,
+  //   scrollTrigger:{
+  //     trigger:"#creative-slider",
+  //     scroller:"body",
+  //     // markers:true,
+  //     start:"top 70%",
+  //     end:"top 50%",
+  //     scrub:2
+  //   }
+  // })
 
 
 
-// //   const slides = document.querySelectorAll("#slider-container > div");
-// // const bulletContainer = document.getElementById("bullet-container").children;
-// // let currentSlide = 0;
-// // const maxSlides = 10;  // Limit to 10 slides
-
-// // function updateSlider() {
-// //   // Transform the slide container to show the current slide
-// //   document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
-
-// //   // Update bullet styles to highlight the active slide
-// //   Array.from(bulletContainer).forEach((bullet, index) => {
-// //     bullet.classList.remove('bg-[#FFE8D6]');
-// //     bullet.classList.add('bg-[#FF570C]');
-// //     if (index === currentSlide) {
-// //       bullet.classList.remove('bg-[#FF570C]');
-// //       bullet.classList.add('bg-[#FFE8D6]');
-// //     }
-// //   });
-// // }
-
-// // document.getElementById("prevSlide").addEventListener("click", () => {
-// //   // Navigate to the previous slide, wrapping around if needed
-// //   currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
-// //   updateSlider();
-// // });
-
-// // document.getElementById("nextSlide").addEventListener("click", () => {
-// //   // Navigate to the next slide, wrapping around if needed
-// //   currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
-// //   updateSlider();
-// // });
-
-// // // Allow bullets to navigate to the corresponding slide
-// // Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
-// //   bullet.addEventListener("click", () => {
-// //     currentSlide = index;
-// //     updateSlider();
-// //   });
-// // });
-
-
-// const slides = document.querySelectorAll("#slider-container > div");
+//   const slides = document.querySelectorAll("#slider-container > div");
 // const bulletContainer = document.getElementById("bullet-container").children;
 // let currentSlide = 0;
 // const maxSlides = 10;  // Limit to 10 slides
 
 // function updateSlider() {
-//     document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
+//   // Transform the slide container to show the current slide
+//   document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
 
-//     // Update bullet styles
-//     Array.from(bulletContainer).forEach((bullet, index) => {
-//         bullet.classList.remove('bg-[#FFE8D6]');
-//         bullet.classList.add('bg-[#FF570C]');
-//         if (index === currentSlide) {
-//             bullet.classList.remove('bg-[#FF570C]');
-//             bullet.classList.add('bg-[#FFE8D6]');
-//         }
-//     });
+//   // Update bullet styles to highlight the active slide
+//   Array.from(bulletContainer).forEach((bullet, index) => {
+//     bullet.classList.remove('bg-[#FFE8D6]');
+//     bullet.classList.add('bg-[#FF570C]');
+//     if (index === currentSlide) {
+//       bullet.classList.remove('bg-[#FF570C]');
+//       bullet.classList.add('bg-[#FFE8D6]');
+//     }
+//   });
 // }
 
 // document.getElementById("prevSlide").addEventListener("click", () => {
-//     currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
-//     updateSlider();
+//   // Navigate to the previous slide, wrapping around if needed
+//   currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
+//   updateSlider();
 // });
 
 // document.getElementById("nextSlide").addEventListener("click", () => {
-//     currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
-//     updateSlider();
+//   // Navigate to the next slide, wrapping around if needed
+//   currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
+//   updateSlider();
 // });
 
+// // Allow bullets to navigate to the corresponding slide
 // Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
-//     bullet.addEventListener("click", () => {
-//         currentSlide = index;
-//         updateSlider();
-//     });
+//   bullet.addEventListener("click", () => {
+//     currentSlide = index;
+//     updateSlider();
+//   });
 // });
 
 
+const slides = document.querySelectorAll("#slider-container > div");
+const bulletContainer = document.getElementById("bullet-container").children;
+let currentSlide = 0;
+const maxSlides = 10;  // Limit to 10 slides
 
-// }
-// servicePageAnimation()
+function updateSlider() {
+    document.getElementById("slider-container").style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    // Update bullet styles
+    Array.from(bulletContainer).forEach((bullet, index) => {
+        bullet.classList.remove('bg-[#FFE8D6]');
+        bullet.classList.add('bg-[#FF570C]');
+        if (index === currentSlide) {
+            bullet.classList.remove('bg-[#FF570C]');
+            bullet.classList.add('bg-[#FFE8D6]');
+        }
+    });
+}
+
+document.getElementById("prevSlide").addEventListener("click", () => {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : maxSlides - 1;
+    updateSlider();
+});
+
+document.getElementById("nextSlide").addEventListener("click", () => {
+    currentSlide = (currentSlide < maxSlides - 1) ? currentSlide + 1 : 0;
+    updateSlider();
+});
+
+Array.from(bulletContainer).slice(0, maxSlides).forEach((bullet, index) => {
+    bullet.addEventListener("click", () => {
+        currentSlide = index;
+        updateSlider();
+    });
+});
+
+
+
+}
+servicePageAnimation()
 
 // function  planPageAnimation(){
 //   var tl2 = gsap.timeline()
