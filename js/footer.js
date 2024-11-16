@@ -33,19 +33,19 @@ let appfooter = `
                 </div>
                 <!-- third column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 md:p-6 max-md:ml-4 max-sm:mt-10 max-md:mt-4 flex flex-col">
-                    <h4 class="font-semibold text-lg max-lg:text-3xl max-md:text-lg max-sm:text-xl">Partner with us</h4>
+                    <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Partner with us</h4>
                     <a href="./vender.html" class="text-md mt-2 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[10.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our vender</a>
                     <a href="./rider.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-36 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our rider</a>
                 </div>
                 <!-- Fourth Column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex max-sm:mt-8 flex-col">
-                    <h4 class="font-semibold text-lg max-lg:text-3xl max-md:text-lg max-sm:text-xl">Support</h4>
+                    <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Support</h4>
                     <a href="./feedback.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[5.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Feedback</a>
                     <a href="./index.html#contactPage" class="text-md max-sm:text-md mt-1 max-lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-20 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Contacts</a>
                 </div>
                 <!-- Fifth Column -->
              <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex flex-col items-start"> 
-                    <h4 class="font-semibold text-lg max-sm:mb-6 max-lg:text-3xl max-md:text-lg max-sm:text-xl">Stay Connected</h4>
+                    <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Stay Connected</h4>
                     <div class="flex items-center gap-4 mt-2 mb-2 justify-center max-md:mt-[-5vw]">
                         <i class="ri-phone-line text-2xl"></i>
                         <div class="text-md flex flex-col">
