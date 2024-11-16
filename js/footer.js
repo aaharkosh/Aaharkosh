@@ -46,7 +46,7 @@ let appfooter = `
                 <!-- Fifth Column -->
              <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex flex-col items-start"> 
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Stay Connected</h4>
-                    <div class="flex items-center gap-4 mt-2 mb-2 justify-center max-md:mt-[-5vw]">
+                    <div class="flex items-center gap-4 mt-2 mb-2 justify-center">
                         <i class="ri-phone-line text-2xl"></i>
                         <div class="text-md flex flex-col">
                             <a class="cursor-pointer hover:text-[#FF570C] transition-all duration-300">
