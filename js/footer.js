@@ -7,7 +7,7 @@ let appfooter = `
             <div class="flex max-md:flex-col max-lg:flex-col justify-center">
                 <!-- First Column -->
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6">
-                    <img class="h-8 max-lg:h-12 max-md:h-8" src="./images/AaharKosh-text-image.svg" alt="">
+                    <img class="h-[2.5vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
                     <div class="flex gap-3 mt-5">
                         <button class="text-lg px-2 py-1 shadow-md rounded-xl cursor-pointer bg-white transition duration-300 ease-in-out hover:scale-110">
                             <i class="ri-twitter-fill"></i>
@@ -34,7 +34,7 @@ let appfooter = `
                 <!-- third column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 md:p-6 max-md:ml-4 max-sm:mt-10 max-md:mt-4 flex flex-col">
                     <h4 class="font-black text-lg max-lg:text-3xl max-md:text-lg max-sm:text-xl">Partner with us</h4>
-                    <a href="./vender.html" class="text-md mt-2 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[10.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our vendor</a>
+                    <a href="./vender.html" class="text-md mt-2 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[10.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our vender</a>
                     <a href="./rider.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-36 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our rider</a>
                 </div>
                 <!-- Fourth Column -->
