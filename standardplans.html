@@ -141,7 +141,7 @@
 <body class="font-sans bg-gray-50 text-gray-900">
 
     <!-- Hero Section -->
-    <section class="relative">
+    <section class="relative pt-20">
         <div class="h-[50vh] max-sm:px-6 max-sm:h-36 flex items-center w-full bg-cover bg-center px-16 bg-[url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
             <h1 class="text-3xl md:text-5xl font-semibold text-center mb-4 md:mb-6">Standard Plans</h1>
         </div> 
@@ -193,13 +193,13 @@
         <h2 class="text-3xl font-bold mb-8 text-gray-800">Weekly Schedule</h2>
         <div class="bg-white rounded-lg p-6" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 text-center" id="day-buttons">
-                <button class="p-4 rounded-lg font-semibold bg-orange-500 text-white font-semibold hover:bg-orange-600" data-day="Monday">Monday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Tuesday">Tuesday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Wednesday">Wednesday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Thursday">Thursday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Friday">Friday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Saturday">Saturday</button>
-                <button class="p-4 rounded-lg font-semibold bg-gray-100 hover:bg-orange-100" data-day="Sunday">Sunday</button>
+                <button class="p-4 rounded-lg font-semibold bg-orange-500 text-white font-semibold hover:shadow-md transition-all duration-300" data-day="Monday">Monday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Tuesday">Tuesday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Wednesday">Wednesday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Thursday">Thursday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Friday">Friday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Saturday">Saturday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Sunday">Sunday</button>
             </div>
             <div class="mt-8">
                 <h3 class="text-xl font-semibold text-gray-800 mb-4" id="selected-day">Meals for Monday</h3>
@@ -278,6 +278,11 @@
 
         dayButtons.forEach(button => {
             button.addEventListener('click', () => {
+                // Remove the orange background from all buttons
+                dayButtons.forEach(b => b.classList.remove('bg-orange-500', 'text-white'));
+                dayButtons.forEach(b => b.classList.add('bg-gray-100', ));
+                // Add orange background to the clicked button
+                button.classList.add('bg-orange-500', 'text-white');
                 const day = button.dataset.day;
                 selectedDay.textContent = `Meals for ${day}`;
                 mealDisplay.innerHTML = mealsData[day]
