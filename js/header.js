@@ -40,13 +40,13 @@ let appHeader = `
                 <i class="ri-close-line"></i>
             </button>
         </div>
-        <a href="./index.html#app-header" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-home-4-line mr-6"></i> Home</a>
-        <a href="./index.html#plansPage" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-chat-check-line mr-6"></i> Plans</a>
-        <a href="./index.html#servicePage" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-customer-service-line mr-6"></i> How it Works</a>
-        <a href="./index.html#why-choose-us" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-map-pin-user-line mr-6"></i> Why Us</a>
-        <a href="./index.html#testimonials" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-customer-service-line mr-6"></i> Testimonials</a>
-        <a href="./aboutus.html" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-group-line mr-6"></i> About Us</a>
-        <a href="./index.html#contactPage" class="text-black h-12 flex items-center pl-4 text-[6vw]"><i class="ri-phone-fill mr-6"></i> Contacts</a>
+        <a href="./index.html#app-header" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-home-4-line mr-6"></i> Home</a>
+        <a href="./index.html#plansPage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-chat-check-line mr-6"></i> Plans</a>
+        <a href="./index.html#servicePage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-customer-service-line mr-6"></i> How it Works</a>
+        <a href="./index.html#why-choose-us" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-map-pin-user-line mr-6"></i> Why Us</a>
+        <a href="./index.html#testimonials" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-customer-service-line mr-6"></i> Testimonials</a>
+        <a href="./aboutus.html" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-group-line mr-6"></i> About Us</a>
+        <a href="./index.html#contactPage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-phone-fill mr-6"></i> Contacts</a>
     </div>
 </div>
 

@@ -26,29 +26,29 @@ let appfooter = `
                 <!-- Second Column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 md:p-6 max-md:ml-4 max-md:mt-8 flex flex-col">
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Company</h4>
-                    <a href="./index.html#why-choose-us" class="text-md max-lg:text-xl max-md:text-md max-lg:mt-4 mt-2 cursor-pointer relative after:content-[''] after:absolute after:w-32 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Why Aaharkosh?</a>
-                    <a href="./whatwedo.html" class="text-md max-lg:text-xl max-md:text-md max-sm:mt-2 mt-1 cursor-pointer relative after:content-[''] after:absolute after:w-24 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">What we do</a>
-                    <a href="./aboutus.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[4.5vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">About us</a>
-                    <a href="./faqs.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-10 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">FAQs</a>
+                    <a href="./index.html#why-choose-us" class="text-md max-sm:text-[4.2vw] max-lg:text-xl max-md:text-md max-lg:mt-4 mt-2 max-sm:mt-2 cursor-pointer relative after:content-[''] after:absolute after:w-32 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Why Aaharkosh?</a>
+                    <a href="./whatwedo.html" class="text-md max-sm:text-[4.2vw] max-lg:text-xl max-md:text-md max-sm:mt-2 mt-1 cursor-pointer relative after:content-[''] after:absolute after:w-24 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">What we do</a>
+                    <a href="./aboutus.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[4.5vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">About us</a>
+                    <a href="./faqs.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-10 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">FAQs</a>
                 </div>
                 <!-- third column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 md:p-6 max-md:ml-4 max-sm:mt-10 max-md:mt-4 flex flex-col">
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Partner with us</h4>
-                    <a href="./vender.html" class="text-md mt-2 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[10.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our vender</a>
-                    <a href="./rider.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-36 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our rider</a>
+                    <a href="./vender.html" class="text-md max-sm:text-[4.2vw] mt-2 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[10.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our vender</a>
+                    <a href="./rider.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-36 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Become our rider</a>
                 </div>
                 <!-- Fourth Column -->
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex max-sm:mt-8 flex-col">
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Support</h4>
-                    <a href="./feedback.html" class="text-md mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[5.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Feedback</a>
-                    <a href="./index.html#contactPage" class="text-md max-sm:text-md mt-1 max-lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-20 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Contacts</a>
+                    <a href="./feedback.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[5.2vw] after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Feedback</a>
+                    <a href="./index.html#contactPage" class="text-md max-sm:text-[4.2vw] max-sm:text-md mt-1 max-lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-20 after:h-[1px] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Contacts</a>
                 </div>
                 <!-- Fifth Column -->
              <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex flex-col items-start"> 
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Stay Connected</h4>
                     <div class="flex items-center gap-4 mt-2 mb-2 justify-center">
                         <i class="ri-phone-line text-2xl"></i>
-                        <div class="text-md max-sm:text-lg flex flex-col">
+                        <div class="text-md max-sm:text-[4.2vw] max-sm:text-lg flex flex-col">
                             <a class="cursor-pointer hover:text-[#FF570C] transition-all duration-300">
                                 +91 6521312315
                             </a>
@@ -59,11 +59,11 @@ let appfooter = `
                     </div>
                     <div class="flex items-center gap-4 justify-center">
                         <i class="ri-mail-line text-2xl"></i>
-                        <a class="text-md cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                        <a class="text-md max-sm:text-[4.2vw] cursor-pointer hover:text-[#FF570C] transition-all duration-300">
                             aaharkosh@gmail.com
                         </a>
                     </div>
-                    <!-- <p class="text-md mt-2 w-full max-md:w-48 max-md:text-md max-lg:text-xl">Questions or Feedback? We'd love to hear from you.</p>
+                    <!-- <p class="text-md max-sm:text-[4.2vw] mt-2 w-full max-md:w-48 max-md:text-md max-lg:text-xl">Questions or Feedback? We'd love to hear from you.</p>
                     <div class="cursor-pointer mt-5 bg-white w-full md:w-56 flex px-3 py-2 rounded-lg">
                         <input class="bg-transparent text-black focus:outline-none text-sm w-full max-md:w-72" type="email" placeholder="Email Address">
                         <button class="bg-[#FF570C] px-2 text-lg text-white rounded-lg py-1">
