@@ -7,22 +7,27 @@
     <link rel="shortcut icon" href="./images/aaharkosh-logo.jpg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Roboto", serif;
+        }
+        :root {
+            --color-primary: #FF570C;
+            --color-secondary: #FF9D5C;
+            --color-primary-light: #FFE8D6;
         }
     </style>
 </head>
 <body class="">
     
-    <header id="app-header"></header>
+    <header id="app-header" class="w-full"></header>
 
-    <div id="feedbackPage" class="w-full">
+    <div id="feedbackPage" class="w-full pt-24">
         
-        <div class="h-28 mb-10 px-16 max-sm:px-6 max-sm:h-20 flex flex-col justify-center  w-full bg-[#FFE8D6]">
+        <div class="h-28 mb-10 px-16 max-sm:px-6 max-sm:h-20 flex flex-col justify-center w-full bg-[#FFE8D6]">
             <h1 class="text-4xl max-sm:text-3xl font-semibold">FEEDBACK</h1>
         </div>
         
@@ -42,17 +47,17 @@
                         <div class="mt-12">
                             <p class="text-gray-600 text-md mb-4">Feel free to get in touch with us via email or phone</p>
 
-                            <div class="flex items-center gap-2 max-sm:mb-4">
+                            <div class="flex items-center gap-2 max-sm:mb-4 hover:text-[#FF570C] transition-all duration-300">
                                 <i class="ri-mail-line text-2xl"></i>
-                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer">
                                     AAHARKOSH@GMAIL.COM
                                 </a>
                             </div>
 
-                            <div class="flex items-center gap-2 max-md:mt-[-5vw]">
-                                <i class="ri-phone-line text-2xl"></i>
+                            <div class="flex items-center gap-2 max-md:mt-[-5vw] hover:text-[#FF570C] transition-all duration-300">
+                                <i class="ri-phone-line text-2xl "></i>
                                 <div class="text-sm">
-                                    <a href="+91 6521312315" class="cursor-pointer text-sm hover:text-[#FF570C] transition-all duration-300">
+                                    <a href="+91 6521312315" class="cursor-pointer text-sm">
                                         +91 6521312315
                                     </a>
                                 </div>
@@ -113,6 +118,8 @@
     <script src="script.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+
+
     
 </body>
 </html>

@@ -3,24 +3,24 @@ let appHeader = `
     <!-- NAVBAR -->
     <div id="app-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
     <!-- Navigation Bar -->
-    <div class="navbar flex items-center bg-white justify-between px-6 md:px-16 py-5">
+    <div class="navbar flex items-center bg-white justify-between transition-all duration-500 px-4 md:px-16 py-5">
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
             <div class="rounded-xl p-1" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-                <img class="h-[3.5vw] max-sm:h-[10vw]" src="./images/aaharkosh-logo.jpg" alt="AaharKosh Logo">
+                <img class="h-[3vw] max-sm:h-[10vw]" src="./images/aaharkosh-logo.jpg" alt="AaharKosh Logo">
             </div>
-            <img class="h-[2.5vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
+            <img class="h-[2vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
         </a>
     
         <!-- Navigation Links (Desktop) -->
         <ul class="hidden md:flex space-x-6 md:space-x-16 font-medium text-lg">
-            <li><a href="./index.html#app-header" class="relative hover:after:scale-x-100">Home</a></li>
-            <li><a href="./index.html#plansPage" class="relative hover:after:scale-x-100">Plans</a></li>
-            <li><a href="./index.html#servicePage" class="relative hover:after:scale-x-100">How it Works</a></li>
-            <li><a href="./index.html#why-choose-us" class="relative hover:after:scale-x-100">Why Us</a></li>
-            <li><a href="./index.html#testimonials" class="relative hover:after:scale-x-100">Testimonial</a></li>
-            <li><a href="./aboutus.html" class="relative hover:after:scale-x-100">About Us</a></li>
-            <li><a href="./index.html#contactPage" class="relative hover:after:scale-x-100">Contacts</a></li>
+            <li><a href="./index.html#app-header" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100">Home</a></li>
+            <li><a href="./index.html#plansPage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Plans</a></li>
+            <li><a href="./index.html#servicePage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">How it Works</a></li>
+            <li><a href="./index.html#why-choose-us" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Why Us</a></li>
+            <li><a href="./index.html#testimonials" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Testimonial</a></li>
+            <li><a href="./aboutus.html" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">About Us</a></li>
+            <li><a href="./index.html#contactPage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Contacts</a></li>
         </ul>
     
         <!-- Hamburger Icon (Mobile) -->
@@ -58,7 +58,7 @@ let appHeader = `
 
 
 document.getElementById("app-header").innerHTML = appHeader;
-
+const appheader = document.querySelector("#app-header")
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.getElementById('close-menu');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -85,17 +85,84 @@ mobileLinks.forEach(link => {
     });
 });
 
+// gsap.to("#app-header",{
+//     position:"fixed",
+//     scrollTrigger:{
+//         scroller:"body",
+//         trigger:".navbar",
+//         start:"top 10%",
+//         end:"top -20%",
+//         markers:true,
+//         scrub:2
+//     }
+// })
+
 // Sliding Navbar Logic
 window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
         // User is scrolling down - hide navbar
-        navbar.classList.add('-translate-y-full');
+        appheader.classList.add('-translate-y-full','transition-all','duration-500');
     } else {
         // User is scrolling up - show navbar
-        navbar.classList.remove('-translate-y-full');
+        appheader.classList.remove('-translate-y-full','transition-all','duration-500');
     }
 
     lastScrollY = currentScrollY; // Update last scroll position
 });
+
+
+
+
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'var(--color-primary)',
+                secondary: 'var(--color-secondary)',
+                light: 'var(--color-primary-light)',
+              },
+            },
+          },
+        }
+   
+
+//         window.addEventListener('scroll', () => {
+//     const header = document.getElementById('app-header');
+  
+//     if (window.scrollY > 100) {
+//       header.classList.add('fixed', 'top-0', 'shadow-lg');
+//       header.classList.remove('relative');
+//     } else {
+//       header.classList.remove('fixed', 'top-0', 'shadow-lg');
+//       header.classList.add('relative');
+//     }
+//   });
+
+
+
+// let lastScrollTop = 0;
+// let header = document.getElementById('app-header');
+// let hasScrolledFirstTime = false;
+
+// window.addEventListener('scroll', function () {
+//     let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+//     // Ensure the animation starts only after first full scroll
+//     if (!hasScrolledFirstTime && currentScrollTop > header.offsetHeight) {
+//         hasScrolledFirstTime = true;
+//     }
+
+//     if (hasScrolledFirstTime) {
+//         if (currentScrollTop > lastScrollTop) {
+//             // Scroll Down - Hide header
+//             header.style.transform = 'translateY(-100%)';
+//         } else {
+//             // Scroll Up - Show header
+//             header.style.transform = 'translateY(0)';
+//         }
+//     }
+
+//     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+// });

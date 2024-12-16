@@ -2,7 +2,7 @@ let appfooter = `
     
     <!-- FOOTER-SECTION -->
 
-    <footer class="bg-[#FFE8D6] w-full overflow-hidden">
+    <footer class="bg-light w-full overflow-hidden">
         <div class="container mx-auto py-6 px-10 pt-6 max-md:p-6 max-lg:p-12 footer-content">
             <div class="flex max-md:flex-col max-lg:flex-col justify-center">
                 <!-- First Column -->
@@ -48,7 +48,7 @@ let appfooter = `
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Stay Connected</h4>
                     <div class="flex items-center gap-4 mt-2 mb-2 justify-center">
                         <i class="ri-phone-line text-2xl"></i>
-                        <div class="text-md flex flex-col">
+                        <div class="text-md max-sm:text-lg flex flex-col">
                             <a class="cursor-pointer hover:text-[#FF570C] transition-all duration-300">
                                 +91 6521312315
                             </a>

@@ -14,10 +14,16 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
+        :root {
+            --color-primary: #FF570C;
+            --color-secondary: #FF9D5C;
+            --color-primary-light: #FFE8D6;
+        }
     </style>
 </head>
 
-<body class="">
+<body>
 
     <header id="app-header" class="max-sm:pb-2"></header>
             
@@ -27,7 +33,7 @@
         <div class="homepage-leftpart flex flex-col items-center lg:items-start w-full lg:w-1/2 gap-6 text-center lg:text-left">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl w-full sm:max-w-[90vw] font-semibold leading-tight">
                 Now Your Lunch <br> Box In 
-                <span class="text-[#FF570C]">Your Pocket</span>
+                <span class="text-primary">Your Pocket</span>
             </h1>
             <!-- Homepage Image for Mobile -->
             <div class="lg:hidden">
@@ -37,26 +43,26 @@
                 We’re here to fill your tummy with delicious, home-style meals that are made with the best ingredients and delivered fast. Enjoy healthy, tasty options at affordable prices, perfectly suited to your schedule and location—whether you want a one-time delivery or a daily subscription, Aaharkosh brings quality right to your doorstep!
             </p>
             <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                <button class="flex items-center gap-2 px-4 py-3 shadow-md rounded-xl bg-[#FF9D5C] text-white text-sm sm:text-sm font-medium w-48 max-sm:w-40 h-16 hover:scale-105 transition-transform duration-300">
+                <button class="flex items-center gap-2 px-4 py-3 shadow-md rounded-xl bg-secondary text-white text-sm sm:text-sm font-medium w-48 max-sm:w-40 h-16 hover:scale-105 transition-transform duration-300">
                     <img class="h-8 sm:h-10" src="./images-removebg-preview.png" alt="Google Play"> 
                     GET IT ON <br> GOOGLE PLAY
                 </button>
-                <button class="flex items-center gap-2 px-4 py-3 shadow-md rounded-xl bg-[#FF9D5C] text-white text-sm sm:text-sm font-medium w-48 max-sm:w-40 h-16 hover:scale-105 transition-transform duration-300">
+                <button class="flex items-center gap-2 px-4 py-3 shadow-md rounded-xl bg-secondary text-white text-sm sm:text-sm font-medium w-48 max-sm:w-40 h-16 hover:scale-105 transition-transform duration-300">
                     <i class="ri-apple-fill text-2xl sm:text-3xl"></i> 
                     GET IT ON <br> APP STORE
                 </button>
             </div>
             <div class="flex gap-3 mt-4">
-                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-[#FFE8D6] hover:bg-[#FF570C] hover:text-white transition-all duration-300">
+                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-light hover:bg-primary hover:text-white transition-all duration-300">
                     <i class="ri-twitter-fill"></i>
                 </button>
-                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-[#FFE8D6] hover:bg-[#FF570C] hover:text-white transition-all duration-300">
+                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-light hover:bg-primary hover:text-white transition-all duration-300">
                     <i class="ri-instagram-fill"></i>
                 </button>
-                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-[#FFE8D6] hover:bg-[#FF570C] hover:text-white transition-all duration-300">
+                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-light hover:bg-primary hover:text-white transition-all duration-300">
                     <i class="ri-facebook-fill"></i>
                 </button>
-                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-[#FFE8D6] hover:bg-[#FF570C] hover:text-white transition-all duration-300">
+                <button class="flex items-center justify-center text-lg sm:text-xl p-2 px-3 rounded-full bg-light hover:bg-primary hover:text-white transition-all duration-300">
                     <i class="ri-google-fill"></i>
                 </button>
             </div>
@@ -72,7 +78,7 @@
     <div id="plansPage" class="flex flex-col items-center px-4 pt-8 pb-16 bg-white">
         <!-- Heading -->
         <h1 class="plan-head text-5xl lg:text-5xl md:text-3xl text-center font-semibold mb-16 sm:mb-8">
-            FIND THE <span class="text-[#FF570C]">RIGHT PLANS</span>
+            FIND THE <span class="text-primary">RIGHT PLANS</span>
         </h1>
         
         <div class="flex flex-col pt-8 max-sm:pt-0 items-center justify-center gap-16">
@@ -80,7 +86,7 @@
             <div class="plancards flex flex-col gap-16 items-center justify-center">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     <!-- Basic Plan -->
-                    <div class="plancard1 border rounded-xl border-[#FF570C] p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105">
+                    <div class="plancard1 border rounded-xl border-primary p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-light transition-all duration-500 hover:scale-105">
                         <h2 class="text-xl font-semibold mb-2">BASIC PLAN</h2>
                         <p class="text-sm mb-6 font-semibold">$15.22 <span class="text-sm">/ MONTH</span></p>
                         <h3 class="text-lg font-semibold mb-2">Features</h3>
@@ -92,11 +98,11 @@
                         <p class="text-sm text-gray-500 mb-6 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
                         </p>
-                        <a href="./standardplans.html"><button class="bg-[#FF9D5C] w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
+                        <a href="./standardplans.html"><button class="bg-secondary w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
                     </div>
                     
                     <!-- Standard Plan -->
-                    <div class="plancard1 border rounded-xl border-[#FF570C] p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105">
+                    <div class="plancard1 border rounded-xl border-primary p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-light transition-all duration-500 hover:scale-105">
                         <h2 class="text-xl font-semibold mb-2">STANDARD PLAN</h2>
                         <p class="text-sm mb-6 font-semibold">$15.22 <span class="text-sm">/ MONTH</span></p>
                         <h3 class="text-lg font-semibold mb-2">Features</h3>
@@ -108,11 +114,11 @@
                         <p class="text-sm text-gray-500 mb-6 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
                         </p>
-                        <a href="./standardplans.html"><button class="bg-[#FF9D5C] w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
+                        <a href="./standardplans.html"><button class="bg-secondary w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
                     </div>
                     
                     <!-- Gold Plan -->
-                    <div class="plancard1 border rounded-xl border-[#FF570C] p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-[#FFE8D6] transition-all duration-500 hover:scale-105">
+                    <div class="plancard1 border rounded-xl border-primary p-8 w-full sm:w-[40vw] lg:w-[20vw] shadow-md cursor-pointer hover:bg-light transition-all duration-500 hover:scale-105">
                         <h2 class="text-xl font-semibold mb-2">GOLD PLAN</h2>
                         <p class="text-sm mb-6 font-semibold">$15.22 <span class="text-sm">/ MONTH</span></p>
                         <h3 class="text-lg font-semibold mb-2">Features</h3>
@@ -124,13 +130,13 @@
                         <p class="text-sm text-gray-500 mb-6 text-justify">
                             Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
                         </p>
-                        <a href="./standardplans.html"><button class="bg-[#FF9D5C] w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
+                        <a href="./standardplans.html"><button class="bg-secondary w-full sm:w-auto font-semibold text-sm text-white px-6 py-3 rounded-xl shadow">BUY NOW</button></a>
                     </div>
                 </div>
             
                 <!-- View More -->
                 <div class="plan-btn">
-                    <a href="./allplans.html"><button class="bg-[#FF9D5C] font-semibold text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition-all duration-300">VIEW MORE PLANS</button></a>
+                    <a href="./allplans.html"><button class="bg-secondary font-semibold text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition-all duration-300">VIEW MORE PLANS</button></a>
                 </div>
             </div>
         </div>
@@ -142,7 +148,7 @@
 
     <div id="servicePage" class="max-sm:pt-4 pb-16 max-sm:pb-0 pt-16">
         <h1 class="service-head text-center text-5xl max-sm:mb-8 max-sm:text-3xl font-semibold">
-            HOW IT <span class="text-[#FF570C]">WORKS</span>
+            HOW IT <span class="text-primary">WORKS</span>
         </h1>
         <div id="creative-slider" class="w-full h-auto overflow-hidden mx-auto max-md:max-w-[100vw] max-sm:px-8 px-16">
             <div class="relative rounded-lg overflow-hidden px-8 max-sm:px-0 max-md:px-12">
@@ -274,7 +280,7 @@
                 <!-- Navigation Buttons -->
                 <button 
                     id="prevSlide" 
-                    class="absolute top-1/2 left-0 w-10 text-white transform -translate-y-1/2 bg-[#FF570C] rounded-full p-2 focus:outline-none transition-all duration-300"
+                    class="absolute top-1/2 left-0 w-10 text-white transform -translate-y-1/2 bg-primary rounded-full p-2 focus:outline-none transition-all duration-300"
                     aria-label="Previous slide"
                 >
                     &#10094;
@@ -282,7 +288,7 @@
             
                 <button 
                     id="nextSlide" 
-                    class="absolute top-1/2 right-0 w-10 text-white transform -translate-y-1/2 bg-[#FF570C] rounded-full p-2 focus:outline-none transition-all duration-300"
+                    class="absolute top-1/2 right-0 w-10 text-white transform -translate-y-1/2 bg-primary rounded-full p-2 focus:outline-none transition-all duration-300"
                     aria-label="Next slide"
                 >
                     &#10095;
@@ -292,16 +298,16 @@
             
                 <!-- Bullet Dots -->
                 <div id="bullet-container" class="pt-4 w-full flex justify-center flex space-x-2">
-                    <span data-slide="0" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FFE8D6] transition-all duration-300"></span>
-                    <span data-slide="1" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="2" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="3" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="4" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="5" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="6" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="7" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="8" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
-                    <span data-slide="9" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-[#FF570C] transition-all duration-300"></span>
+                    <span data-slide="0" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-light transition-all duration-300"></span>
+                    <span data-slide="1" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="2" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="3" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="4" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="5" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="6" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="7" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="8" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
+                    <span data-slide="9" class="w-3 h-3 max-sm:w-2 max-sm:h-2 rounded-full bg-primary transition-all duration-300"></span>
                 </div>
         </div>
     </div>
@@ -314,7 +320,7 @@
         <!-- Why Choose Us Section -->
         <div class="px-16 max-sm:px-8">
             <div class="container mx-auto text-center">
-                <h2 class="text-5xl font-semibold mb-16 max-sm:mb-8 max-sm:text-3xl">WHY<span class="text-[#FF570C]"> CHOOSE US</span></h2>
+                <h2 class="text-5xl font-semibold mb-16 max-sm:mb-8 max-sm:text-3xl">WHY<span class="text-primary"> CHOOSE US</span></h2>
                 <p class="text-gray-600 mb-10">We make it easy to stay healthy with freshly-prepared meals and flexible plans designed to fit your lifestyle.</p>
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                     <div class="bg-white rounded-2xl max-sm:px-7 p-8 px-[1vw] hover:shadow-xl transition-shadow duration-200" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
@@ -348,7 +354,7 @@
       <!-- Testimonial Section -->
       <div class="max-sm:pt-16 pb-16 max-sm:pb-0  pt-16">
         <div id="testimonials" class="container mx-auto px-6 md:px-16 text-center">
-            <h2 class="text-5xl font-semibold mb-16 max-sm:mb-8 max-sm:text-3xl">WHAT OUR <span class="text-[#FF570C]">CUSTOMERS SAY</span></h2>
+            <h2 class="text-5xl font-semibold mb-16 max-sm:mb-8 max-sm:text-3xl">WHAT OUR <span class="text-primary">CUSTOMERS SAY</span></h2>
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="bg-white rounded-2xl p-6" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
                     <p class="text-gray-600 mb-4">“The meal plans are perfect for my busy schedule. I feel healthier and have more energy!”</p>
@@ -374,7 +380,7 @@
      
     <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16  pt-16 w-full">
         
-        <h1 class="contact-head text-center text-5xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-[#FF570C]">TOUCH</span></h1>
+        <h1 class="contact-head text-center text-5xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-primary">TOUCH</span></h1>
         
 
         <div class="flex items-center justify-center mt-12">
@@ -394,7 +400,7 @@
 
                             <div class="flex items-center gap-2 max-sm:mb-4">
                                 <i class="ri-mail-line text-2xl"></i>
-                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer hover:text-primary transition-all duration-300">
                                     AAHARKOSH@GMAIL.COM
                                 </a>
                             </div>
@@ -402,7 +408,7 @@
                             <div class="flex items-center gap-2 max-md:mt-[-5vw]">
                                 <i class="ri-phone-line text-2xl"></i>
                                 <div class="text-sm">
-                                    <a href="+91 6521312315" class="cursor-pointer text-sm hover:text-[#FF570C] transition-all duration-300">
+                                    <a href="+91 6521312315" class="cursor-pointer text-sm hover:text-primary transition-all duration-300">
                                         +91 6521312315
                                     </a>
                                 </div>
@@ -433,7 +439,7 @@
                         </select> -->
                         
                         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
-                            <button type="submit" class="bg-[#FF9D5C] text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
+                            <button type="submit" class="bg-secondary text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
                                 Submit
                             </button>
                             <!-- <p class="text-sm text-gray-500">
@@ -461,9 +467,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- script file -->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'var(--color-primary)',
+                secondary: 'var(--color-secondary)',
+                light: 'var(--color-primary-light)',
+              },
+            },
+          },
+        }
+      </script>
     
 </body>
 </html>
