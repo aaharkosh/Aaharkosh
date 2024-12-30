@@ -97,20 +97,20 @@ mobileLinks.forEach(link => {
 //     }
 // })
 
-// Sliding Navbar Logic
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
+// // Sliding Navbar Logic
+// window.addEventListener('scroll', () => {
+//     const currentScrollY = window.scrollY;
 
-    if (currentScrollY > lastScrollY) {
-        // User is scrolling down - hide navbar
-        appheader.classList.add('-translate-y-full','transition-all','duration-500');
-    } else {
-        // User is scrolling up - show navbar
-        appheader.classList.remove('-translate-y-full','transition-all','duration-500');
-    }
+//     if (currentScrollY > lastScrollY) {
+//         // User is scrolling down - hide navbar
+//         appheader.classList.add('-translate-y-full','transition-all','duration-500');
+//     } else {
+//         // User is scrolling up - show navbar
+//         appheader.classList.remove('-translate-y-full','transition-all','duration-500');
+//     }
 
-    lastScrollY = currentScrollY; // Update last scroll position
-});
+//     lastScrollY = currentScrollY; // Update last scroll position
+// });
 
 
 
