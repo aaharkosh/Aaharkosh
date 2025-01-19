@@ -27,83 +27,90 @@
 
     <div id="feedbackPage" class="w-full pt-24">
         
-        <div class="h-28 mb-10 px-16 max-sm:px-6 max-sm:h-20 flex flex-col justify-center w-full bg-[#FFE8D6]">
-            <h1 class="text-4xl max-sm:text-3xl font-semibold">FEEDBACK</h1>
+        <div class="h-28  px-16 max-sm:px-6 max-sm:h-20 flex flex-col justify-center w-full bg-light ">
+            <h1 class="text-4xl max-sm:text-3xl font-medium">FEEDBACK</h1>
         </div>
         
 
-        <div class=" flex items-center justify-center mt-20 max-sm:mt-4 max-sm:p-6">
-            <div class="bg-[#FFE8D6] contact-box rounded-xl shadow-lg w-full max-w-4xl p-8 max-sm:p-4 relative">
+        <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16  pt-8 w-full">
+        
+            <!-- <h1 class="contact-head text-center text-4xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-primary">TOUCH</span></h1> -->
+            
     
-                <!-- Main Content -->
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Left Column -->
-                    <div>
-                        <h1 class="text-2xl font-bold mb-6">Give us a Feedback</h1>
-                        <p class="text-gray-600 text-md mb-8">
-                            Feel free to reach out to us! Whether you have questions, feedback, or just want to connect, we’d love to hear from you. Please fill out the form, and we’ll get back to you as soon as possible.
-                        </p>
-                        
-                        <div class="mt-12">
-                            <p class="text-gray-600 text-md mb-4">Feel free to get in touch with us via email or phone</p>
-
-                            <div class="flex items-center gap-2 text-gray-600 max-sm:mb-4 hover:text-[#FF570C] transition-all duration-300">
-                                <i class="ri-mail-line text-2xl"></i>
-                                <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer">
-                                    AAHARKOSH@GMAIL.COM
-                                </a>
-                            </div>
-
-                            <div class="flex items-center gap-2 text-gray-600 max-md:mt-[-5vw] hover:text-[#FF570C] transition-all duration-300">
-                                <i class="ri-phone-line text-2xl "></i>
-                                <div class="text-sm">
-                                    <a href="+91 6521312315" class="cursor-pointer text-sm">
-                                        +91 6521312315
+            <div class="flex items-center justify-center mt-12">
+                <div class="bg-white contact-box rounded-xl shadow-lg w-full max-w-4xl p-8 max-sm:p-4 relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+        
+                    <!-- Main Content -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left Column -->
+                        <div>
+                            <h1 class="text-2xl font-semibold mb-6">Give us your feedback</h1>
+                            <p class="text-gray-600 text-md mb-8">
+                                Connect with us if you are facing any problem. Our team will reach out to you and help you get the easy and best solutions. Just fill out the given form with your basic details and our team will reach out to you soon. 
+                            </p>
+                            
+                            <div class="mt-12">
+                                <p class="text-gray-600 text-md mb-4">Feel free to get in touch with us via email or phone</p>
+    
+                                <div class="flex items-center gap-2 max-sm:mb-4 text-gray-600 hover:text-primary transition-all duration-300">
+                                    <i class="ri-mail-line text-2xl"></i>
+                                    <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer">
+                                        aaharkosh@gmail.com
                                     </a>
                                 </div>
+    
+                                <div class="flex items-center gap-2 max-md:mt-[-5vw] text-gray-600 hover:text-primary transition-all duration-300">
+                                    <i class="ri-phone-line text-2xl"></i>
+                                    <div class="text-sm">
+                                        <a href="+91 6521312315" class="cursor-pointer text-sm">
+                                            +91 7987681268
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+                        <!-- Right Column - Form -->
+                        <form class="grid gap-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <input type="text" placeholder="First name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
+                                <input type="text" placeholder="Last name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
                             </div>
                             
-                        </div>
+                            <input type="email" placeholder="Email address" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
+                            <input type="text" placeholder="Enter your subject" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
+                            
+                            
+                            
+                            <textarea placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full"></textarea>
+                            
+                            <!-- <select class="bg-gray-50 rounded-lg p-3 w-full text-gray-500">
+                                <option value="" disabled selected>What are you interested in?</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select> -->
+                            
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
+                                <button type="submit" class="bg-secondary text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
+                                    Submit
+                                </button>
+                                <!-- <p class="text-sm text-gray-500">
+                                    By clicking Submit you agree that neoverv GmbH can process your personal data as required for the information request. You have read the 
+                                    <a href="#" class="text-emerald-400 hover:text-emerald-500">data protection statement</a>.
+                                </p> -->
+                            </div>
+                        </form>
                     </div>
-    
-                    <!-- Right Column - Form -->
-                    <form class="grid gap-4">
-                        <div class="grid grid-cols-2 gap-4">
-                            <input type="text" placeholder="First name" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
-                            <input type="text" placeholder="Last name" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
-                        </div>
-                        
-                        <input type="email" placeholder="Email address" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
-                        <input type="text" placeholder="Enter your subject" class="bg-white focus:outline-none text-sm rounded-lg p-3 w-full">
-                        
-                        
-                        
-                        <textarea placeholder="Feedback" rows="4" class="bg-white focus:outline-none resize-none text-sm rounded-lg p-3 w-full"></textarea>
-                        
-                        <!-- <select class="bg-gray-50 rounded-lg p-3 w-full text-gray-500">
-                            <option value="" disabled selected>What are you interested in?</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                        </select> -->
-                        
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
-                            <button type="submit" class="bg-[#FF9D5C] px-8 py-2 text-white rounded-lg hover:bg-[#FF6600] transition-all duration-300 transition-colors">
-                                Submit
-                            </button>
-                            <!-- <p class="text-sm text-gray-500">
-                                By clicking Submit you agree that neoverv GmbH can process your personal data as required for the information request. You have read the 
-                                <a href="#" class="text-emerald-400 hover:text-emerald-500">data protection statement</a>.
-                            </p> -->
-                        </div>
-                    </form>
                 </div>
             </div>
+    
         </div>
 
     </div>
 
-    <footer id="app-footer" class="mt-20"></footer>
+    <footer id="app-footer" class="mt-8"></footer>
 
 
 
