@@ -45,7 +45,7 @@ let appfooter = `
                 </div>
                 <div class="md:w-1/2 xl:w-1/4 lg:w-1/2 p-4 md:p-6 max-md:mt-4 flex max-sm:mt-8 flex-col">
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Legal</h4>
-                    <a href="./privacy.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[6.5vw] after:h-[0.05vw] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Privacy Policy</a>
+                    <a href="./policy.html" class="text-md max-sm:text-[4.2vw] mt-1 max-lg:text-xl max-md:text-md cursor-pointer relative after:content-[''] after:absolute after:w-[6.5vw] after:h-[0.05vw] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Privacy Policy</a>
                     <a href="./terms.html" class="text-md max-sm:text-[4.2vw] max-sm:text-md mt-1 max-lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-36 after:h-[0.05vw] after:bg-black after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all">Terms & Conditions</a>
                 </div>
                 <!-- Fifth Column -->
