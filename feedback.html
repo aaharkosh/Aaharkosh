@@ -37,7 +37,7 @@
             <!-- <h1 class="contact-head text-center text-4xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-primary">TOUCH</span></h1> -->
             
     
-            <div class="flex items-center justify-center mt-12">
+            <div class="flex items-center justify-center mt-12 max-sm:mt-4">
                 <div class="bg-white contact-box rounded-xl shadow-lg w-full max-w-4xl p-8 max-sm:p-4 relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
         
                     <!-- Main Content -->
@@ -72,39 +72,66 @@
                         </div>
         
                         <!-- Right Column - Form -->
-                        <form class="grid gap-4">
+                        <form id="contactForm" class="grid gap-4">
                             <div class="grid grid-cols-2 gap-4">
-                                <input type="text" placeholder="First name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
-                                <input type="text" placeholder="Last name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
+                                <input type="text" id="firstName" placeholder="First name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+                                <input type="text" id="lastName" placeholder="Last name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
                             </div>
-                            
-                            <input type="email" placeholder="Email address" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
-                            <input type="text" placeholder="Enter your subject" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full">
-                            
-                            
-                            
-                            <textarea placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full"></textarea>
-                            
-                            <!-- <select class="bg-gray-50 rounded-lg p-3 w-full text-gray-500">
-                                <option value="" disabled selected>What are you interested in?</option>
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                                <option>Option 3</option>
-                            </select> -->
-                            
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
+        
+                            <input type="email" id="email" placeholder="Email address" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+                            <input type="text" id="subject" placeholder="Enter your subject" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+        
+                            <textarea id="message" placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full" required></textarea>
+        
+                            <<div class="flex flex-col items-start gap-4 mt-4">
                                 <button type="submit" class="bg-secondary text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
                                     Submit
                                 </button>
-                                <!-- <p class="text-sm text-gray-500">
-                                    By clicking Submit you agree that neoverv GmbH can process your personal data as required for the information request. You have read the 
-                                    <a href="#" class="text-emerald-400 hover:text-emerald-500">data protection statement</a>.
-                                </p> -->
-                            </div>
+                                <div id="responseMessage" class="text-sm mt-[-0.7vw]"></div>                 
+                            </div>                
                         </form>
                     </div>
                 </div>
             </div>
+
+            <script>
+                // Handle form submission
+                document.getElementById('contactForm').addEventListener('submit', async function(event) {
+                    event.preventDefault(); // Prevent page reload
+                
+                    const formData = {
+                        firstName: document.getElementById('firstName').value,
+                        lastName: document.getElementById('lastName').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                
+                    // API Endpoint (Replace with your API URL)
+                    const apiUrl = 'https://aharkosh-backend.onrender.com/api/website-feedback';
+                
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(formData),
+                        });
+                
+                        const result = await response.json();
+                
+                        if (response.ok) {
+                            document.getElementById('responseMessage').innerHTML = "<span class='text-green-500'>Message sent successfully! We will get back to you soon.</span>";
+                            document.getElementById('contactForm').reset(); // Reset the form
+                        } else {
+                            throw new Error(result.message || 'Something went wrong!');
+                        }
+                    } catch (error) {
+                        document.getElementById('responseMessage').innerHTML = `<span class='text-red-500'>Error: ${error.message}</span>`;
+                    }
+                });
+                </script>
     
         </div>
 

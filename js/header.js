@@ -3,7 +3,7 @@ let appHeader = `
     <!-- NAVBAR -->
     <div id="app-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
     <!-- Navigation Bar -->
-    <div class="navbar flex items-center bg-white justify-between transition-all duration-500 px-4 md:px-16 py-5">
+    <div class="navbar bg-white flex items-center justify-between transition-all duration-500 px-4 md:px-16 py-5">
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
             <div class="rounded-xl p-1" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
@@ -103,7 +103,7 @@ mobileLinks.forEach(link => {
 
 //     if (currentScrollY > lastScrollY) {
 //         // User is scrolling down - hide navbar
-//         appheader.classList.add('-translate-y-full','transition-all','duration-500');
+//         appheader.classList.add('bg-white','transition-all','duration-500');
 //     } else {
 //         // User is scrolling up - show navbar
 //         appheader.classList.remove('-translate-y-full','transition-all','duration-500');
