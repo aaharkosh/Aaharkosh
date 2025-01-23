@@ -32,7 +32,7 @@ let appHeader = `
     </div>
 
     <!-- Mobile Menu (Full-screen Overlay) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-gray-100 z-50 hidden flex flex-col p-5 pt-10 space-y-4 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-100 z-50 hidden flex flex-col p-5 pt-10 space-y-4 max-md:space-y-12 max-sm:space-y-6 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
         <!-- Close Icon -->
         <div class="relative pb-12">
             <img class="h-8 absolute top-1 left-6" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
