@@ -3,7 +3,7 @@ let appHeader = `
     <!-- NAVBAR -->
     <div id="app-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
     <!-- Navigation Bar -->
-    <div class="navbar bg-white flex items-center justify-between transition-all duration-500 px-4 md:px-16 py-5">
+    <div class="navbar flex items-center justify-between transition-all px-4 md:px-16 py-5">
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
             <div class="rounded-xl p-1" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
@@ -13,14 +13,14 @@ let appHeader = `
         </a>
     
         <!-- Navigation Links (Desktop) -->
-        <ul class="hidden md:flex space-x-6 md:space-x-16 font-medium text-lg">
-            <li><a href="./index.html#app-header" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100">Home</a></li>
-            <li><a href="./index.html#plansPage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Plans</a></li>
-            <li><a href="./index.html#servicePage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">How it Works</a></li>
-            <li><a href="./index.html#why-choose-us" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Why Us</a></li>
-            <li><a href="./index.html#testimonials" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Testimonial</a></li>
-            <li><a href="./aboutus.html" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">About Us</a></li>
-            <li><a href="./index.html#contactPage" class="relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Contacts</a></li>
+        <ul class="hidden md:flex space-x-16 max-md:space-x-6 font-medium text-lg">
+            <li><a href="./index.html#app-header" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100">Home</a></li>
+            <li><a href="./index.html#plansPage" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Plans</a></li>
+            <li><a href="./index.html#servicePage" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">How it Works</a></li>
+            <li><a href="./index.html#why-choose-us" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Why Us</a></li>
+            <li><a href="./team.html" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Career</a></li>
+            <li><a href="./aboutus.html" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">About Us</a></li>
+            <li><a href="./index.html#contactPage" class="nav-link relative cursor-pointer after:content-[''] after:absolute after:w-full hover:text-primary after:h-[0.08vw] after:bg-primary after:left-0 after:bottom-[-5%] after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[500ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left transition-all hover:after:scale-x-100 hover:after:scale-x-100">Contacts</a></li>
         </ul>
     
         <!-- Hamburger Icon (Mobile) -->
@@ -44,7 +44,7 @@ let appHeader = `
         <a href="./index.html#plansPage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-chat-check-line mr-6"></i> Plans</a>
         <a href="./index.html#servicePage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-customer-service-line mr-6"></i> How it Works</a>
         <a href="./index.html#why-choose-us" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-map-pin-user-line mr-6"></i> Why Us</a>
-        <a href="./index.html#testimonials" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-customer-service-line mr-6"></i> Testimonials</a>
+        <a href="./team.html" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-customer-service-line mr-6"></i>Career</a>
         <a href="./aboutus.html" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-group-line mr-6"></i> About Us</a>
         <a href="./index.html#contactPage" class="text-black h-10 flex items-center pl-4 text-[5vw]"><i class="ri-phone-fill mr-6"></i> Contacts</a>
     </div>
@@ -52,6 +52,51 @@ let appHeader = `
 
 
 `;
+
+
+// navbar script js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const pageName = window.location.pathname.split("/").pop(); // Get current page name
+
+    // Define page-specific background colors
+    const pageColors = {
+        "faqs.html": "bg-light",  
+        "aboutus.html": "bg-light", 
+        "feedback.html": "bg-light", 
+        "policy.html": "bg-light", 
+        "allplans.html": "bg-light",
+        "team.html": "bg-light",
+        "whatwedo.html": "bg-light",
+        "terms.html": "bg-light"
+    };
+
+    // Set default background if page matches, otherwise keep white
+    if (pageColors[pageName]) {
+        navbar.classList.add(pageColors[pageName]);
+    } else {
+        navbar.classList.add("bg-white");
+    }
+
+    // Change navbar background on scroll
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            navbar.classList.remove(...Object.values(pageColors)); // Remove all possible colors
+            navbar.classList.add("bg-white");
+        } else {
+            if (pageColors[pageName]) {
+                navbar.classList.remove("bg-white");
+                navbar.classList.add(pageColors[pageName]);
+            }
+        }
+    });
+});
+
+
+
+
+
 
 
 
@@ -64,7 +109,7 @@ const closeMenu = document.getElementById('close-menu');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = mobileMenu.querySelectorAll('a'); // Select all links inside the mobile menu
 const navbar = document.querySelector('.navbar'); // Select the navbar
-let lastScrollY = window.scrollY; // Track the last scroll position
+// let lastScrollY = window.scrollY; // Track the last scroll position
 
 // Toggle mobile menu
 hamburger.addEventListener('click', () => {
@@ -165,4 +210,34 @@ mobileLinks.forEach(link => {
 //     }
 
 //     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+// });
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // const header = document.getElementById("app-header");
+//     const orangeBgPages = ["aboutus.html", "team.html"]; // Pages where navbar starts as orange
+//     const currentPage = window.location.pathname.split("/").pop(); // Get the current filename
+
+//     function updateNavbarOnScroll() {
+//         if (window.scrollY > 50) {
+//             appheader.classList.remove("bg-orange-500");
+//             appheader.classList.add("bg-white", "shadow-md");
+//         } else {
+//             appheader.classList.remove("bg-white", "shadow-md");
+//             appheader.classList.add("bg-orange-500");
+//         }
+//     }
+
+//     if (orangeBgPages.includes(currentPage)) {
+//         appheader.classList.add("bg-orange-500");
+
+//         window.addEventListener("scroll", updateNavbarOnScroll);
+//     } else {
+//         appheader.classList.add("bg-white");
+//     }
 // });

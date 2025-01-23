@@ -3,7 +3,7 @@ let appfooter = `
     <!-- FOOTER-SECTION -->
 
     <footer class="bg-light w-full overflow-hidden">
-        <div class="container mx-auto py-6 px-16 pt-6 max-md:p-6 max-lg:p-12 footer-content">
+        <div class=" mx-auto py-6 px-16 pt-6 max-md:p-6 max-lg:p-12 footer-content">
             <div class="flex max-md:flex-col max-lg:flex-col justify-between gap-8">
                 <!-- First Column -->
                 <div class="">
@@ -52,15 +52,15 @@ let appfooter = `
                 <!-- sixth Column -->
              <div class="flex flex-col items-start"> 
                     <h4 class="font-semibold text-lg max-md:text-lg max-sm:text-xl max-lg:text-3xl">Stay Connected</h4>
-                    <div class="flex items-center gap-4 mt-2 justify-center cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                    <div class="flex text-md max-sm:text-[4.2vw] items-center gap-4 mt-2 justify-center cursor-pointer hover:text-[#FF570C] transition-all duration-300">
                         <i class="ri-phone-line text-2xl"></i>
-                        <div class="text-md max-sm:text-[4.2vw] max-sm:text-lg flex flex-col">
+                        <div class="text-md max-sm:text-[4.2vw] flex flex-col">
                             <a class="cursor-pointer">
                                 +91 7987681268
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4 justify-center cursor-pointer hover:text-[#FF570C] transition-all duration-300">
+                    <div class="flex text-md max-sm:text-[4.2vw] items-center gap-4 justify-center cursor-pointer hover:text-[#FF570C] transition-all duration-300">
                         <i class="ri-mail-line text-2xl"></i>
                         <a class="text-md max-sm:text-[4.2vw]">
                             aaharkosh@gmail.com
