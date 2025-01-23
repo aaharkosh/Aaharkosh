@@ -148,7 +148,7 @@
                         <span id="category-text">Category</span>
                         <svg id="arrow" class="w-5 h-5 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div id="dropdown" class="absolute hidden bg-white border rounded-lg w-full mt-1 shadow-lg">
+                    <div id="dropdown" class="absolute z-10 hidden bg-white border rounded-lg w-full mt-1 shadow-lg">
                         <button class="block w-full text-left p-2 hover:bg-gray-200" onclick="selectCategory('All Category')">All Category</button>
                         <button class="block w-full text-left p-2 hover:bg-gray-200" onclick="selectCategory('General')">General</button>
                         <button class="block w-full text-left p-2 hover:bg-gray-200" onclick="selectCategory('Refund Policy')">Refund Policy</button>
@@ -270,6 +270,18 @@
                 arrow.classList.toggle("rotate-180");
             }
         }
+
+        function toggleDropdown() {
+            document.getElementById('dropdown').classList.toggle('hidden');
+            let arrow = document.getElementById('arrow');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        function selectCategory(category) {
+            document.getElementById('category-text').innerText = category;
+            toggleDropdown();
+        }
+        
     </script>
 
     <!-- FOOTER-SECTION -->
