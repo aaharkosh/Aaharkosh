@@ -6,8 +6,8 @@ let appHeader = `
     <div class="navbar flex items-center justify-between transition-all px-4 md:px-16 py-5">
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
-            <div class="rounded-xl p-1" >
-                <img class="h-[4vw] max-sm:h-[10vw]" src="./images/app logo.png" alt="AaharKosh Logo">
+            <div class="rounded-xl p-1">
+                <img class="h-[4vw] max-sm:h-[10vw] rounded-lg" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);"  src="./images/app logo.png" alt="AaharKosh Logo">
             </div>
             <img class="h-[2vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
         </a>
