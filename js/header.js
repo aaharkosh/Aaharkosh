@@ -6,8 +6,8 @@ let appHeader = `
     <div class="navbar flex items-center justify-between transition-all px-4 md:px-16 py-5">
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
-            <div class="rounded-xl p-1" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-                <img class="h-[3vw] max-sm:h-[10vw]" src="./images/aaharkosh-logo.jpg" alt="AaharKosh Logo">
+            <div class="rounded-xl p-1" >
+                <img class="h-[4vw] max-sm:h-[10vw]" src="./images/app logo.png" alt="AaharKosh Logo">
             </div>
             <img class="h-[2vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
         </a>
@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "feedback.html": "bg-light", 
         "policy.html": "bg-light", 
         "allplans.html": "bg-light",
-        "team.html": "bg-light",
         "whatwedo.html": "bg-light",
         "terms.html": "bg-light"
     };
