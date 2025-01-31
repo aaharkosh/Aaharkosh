@@ -20,6 +20,14 @@
             --color-secondary: #FF9D5C;
             --color-primary-light: #FFE8D6;
         }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
     </style>
 </head>
 
@@ -37,8 +45,11 @@
             </h1>
             <!-- Homepage Image for Mobile -->
             <div class="lg:hidden">
-                <img class="object-cover object-center w-full max-h-96" src="./images/newlandingimage.png" alt="Landing Image">
+                <img class="object-cover object-center w-full h-auto" src="./images/homepage.png" alt="Landing Image">
+                <img class="mt-[-30vw] max-sm:w-40 animate-float" src="./images/review.png" alt="">
+                <img class="ml-[52vw] max-sm:w-32 min-md:ml-[60vw] min-md:mt-8 animate-float" src="./images/dosa.png" alt="">
             </div>
+
             <p class="text-base sm:text-lg text-gray-500 lg:w-[80%] max-w-[90vw]">
                 Get your lunch ready on time and delivered to you. Download the Aaharkosh app now to order and receive it at your doorstep. Enjoy one time-delivery to daily subscription options at an affordable price and get your hands on the Yummy and quality food. 
             </p>
@@ -69,7 +80,9 @@
         </div>
         <!-- HOME-RIGHTPART -->
         <div class="hidden lg:block lg:w-1/2">
-            <img class="object-cover object-center w-full h-auto" src="./images/newlandingimage.png" alt="Landing Image">
+            <img class="object-cover object-center w-full h-auto" src="./images/homepage.png" alt="Landing Image">
+            <img class="mt-[-15vw] animate-float" src="./images/review.png" alt="">
+            <img class="ml-[25vw] animate-float min-[1800px]:ml-[28vw] min-[1800px]:mt-[3vw] max-[1600px]:ml-[25vw] max-[1600px]:mt-[1vw]" src="./images/dosa.png" alt="">
         </div>
     </div>
     
@@ -421,7 +434,7 @@
 
 
       <!-- Testimonial Section -->
-      <div class="max-sm:pt-16 pb-16 max-sm:pb-0  pt-8">
+      <!-- <div class="max-sm:pt-16 pb-16 max-sm:pb-0  pt-8">
         <div id="testimonials" class="container mx-auto px-6 md:px-16 text-center">
             <h2 class="text-4xl font-semibold mb-16 max-sm:mb-8 max-sm:text-3xl">WHAT OUR <span class="text-primary">CUSTOMERS SAY</span></h2>
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -443,11 +456,118 @@
                 </div>
             </div>
         </div>
-      </div>
+      </div> -->
+
+      
+    <div>
+
+        <section class="w-full px-4 py-16 mx-auto max-w-7xl">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="flex flex-col items-center justify-center gap-2 mb-4">
+                    <!-- Crown Icon -->
+                    <h2 class="text-4xl font-semibold mb-4 max-sm:mb-8 max-sm:text-3xl">WHAT OUR <span class="text-primary">CUSTOMERS SAY</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto mb-10 text-sm md:text-base">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
+            </div>
+    
+            <!-- Testimonials Slider -->
+            <div class="relative ">
+                <div class="testimonial-slider grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"  >
+                    <!-- Testimonial Cards will be dynamically inserted here -->
+                </div>
+            </div>
+    
+            <!-- Navigation Dots -->
+            <div class="flex justify-center gap-2 mt-8" id="slider-dots">
+                <!-- Dots will be dynamically added here -->
+            </div>
+        </section>
+    
+        <script>
+            const testimonials = [
+                { name: "Mark Davies", text: "There are many variations of kind to repeat clearly since all time necessary injected for the going are famous words." },
+                { name: "Anthony Mendl", text: "The course structure was well-organized and easy to follow. I learned so much in such a short time!" },
+                { name: "Michael Lock", text: "The instructors were knowledgeable and always ready to help. I highly recommend this program." },
+                { name: "Ronald David", text: "This course has been a game-changer for my career. I'm now confident in my skills and ready for new challenges." },
+                { name: "Emma Thompson", text: "The practical projects really helped solidify my understanding. Great hands-on experience!" },
+                { name: "Sophia Chen", text: "I appreciated the flexibility of the online format. It allowed me to balance my studies with work." },
+                { name: "James Wilson", text: "The community support was fantastic. I learned as much from my peers as I did from the course material." },
+                { name: "Olivia Martinez", text: "This program exceeded my expectations. I feel well-prepared for the job market now." },
+                { name: "Olivia Martinez", text: "This program exceeded my expectations. I feel well-prepared for the job market now." }
+            ];
+    
+            const sliderContainer = document.querySelector('.testimonial-slider');
+            const dotsContainer = document.getElementById('slider-dots');
+            const itemsPerPage = 3;
+            const totalPages = Math.ceil(testimonials.length / itemsPerPage);
+    
+            function createTestimonialCard(testimonial) {
+                return `
+                    <div class="testimonial-card flex flex-col justify-between p-6 bg-white rounded-lg text-center relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.07);">
+                        <p class="text-gray-600 italic">"${testimonial.text}"</p>
+                        <div class="mt-4 flex items-center justify-center gap-3">
+                            <img src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=2536" alt="User" class="rounded-full h-12 mt-[-1vw]">
+                            <div>
+                                <h4 class="font-bold text-gray-800">${testimonial.name}</h4>
+                            <div class="flex justify-center mb-4">
+                                <span class="text-secondary text-xl">★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+    
+            function renderTestimonials(startIndex) {
+                const endIndex = startIndex + itemsPerPage;
+                const currentTestimonials = testimonials.slice(startIndex, endIndex);
+                sliderContainer.innerHTML = currentTestimonials.map(createTestimonialCard).join('');
+            }
+    
+            function renderDots() {
+                dotsContainer.innerHTML = Array(totalPages).fill().map((_, i) => `
+                    <button class="w-2 h-2 rounded-full bg-light transition-all duration-300 ease-in-out" data-index="${i}"></button>
+                `).join('');
+                updateActiveDot(0);
+            }
+    
+            function updateActiveDot(index) {
+                document.querySelectorAll('#slider-dots button').forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.remove('w-2', 'bg-light');
+                        dot.classList.add('w-6', 'bg-secondary');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-secondary');
+                        dot.classList.add('w-2', 'bg-light');
+                    }
+                });
+            }
+    
+            function slideTo(index) {
+                renderTestimonials(index * itemsPerPage);
+                updateActiveDot(index);
+            }
+    
+            renderTestimonials(0);
+            renderDots();
+    
+            dotsContainer.addEventListener('click', (e) => {
+                if (e.target.matches('button')) {
+                    const index = parseInt(e.target.getAttribute('data-index'));
+                    slideTo(index);
+                }
+            });
+        </script>
+
+    </div>
+
+
 
     <!-- CONTACT US -->
      
-    <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16  pt-8 w-full">
+    <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16 w-full">
         
         <h1 class="contact-head text-center text-4xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-primary">TOUCH</span></h1>
         
