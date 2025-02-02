@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaharkosh</title>
+    <link rel="shortcut icon" href="/images/aaharkosh-logo.jpg" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'roboto',serif;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        :root {
+            --color-primary: #FF570C;
+            --color-secondary: #FF9D5C;
+            --color-primary-light: #FFE8D6;
+        }
+    </style>
+</head>
+<body class="">
+
+    <!-- Header -->
+    <header id="app-header"></header>
+
+<body class="font-sans bg-gray-50 text-gray-900">
+
+    <!-- Hero Section -->
+    <section class="relative pt-20">
+        <div class="h-[50vh] max-sm:px-6 max-sm:h-36 flex items-center w-full bg-cover bg-center px-16 bg-[url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+            <h1 class="text-3xl md:text-5xl font-medium text-center mb-4 md:mb-6">Standard Plans</h1>
+        </div> 
+    </section>
+
+    <!-- Detail Section -->
+    <section id="details" class="mx-auto mt-16 px-4 md:px-16" >
+        <h2 class="text-3xl font-bold mb-8  text-gray-800">Plan Details</h2>
+        <div class="bg-white rounded-lg p-6" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+            <h2 class="text-xl font-bold mb-2">BASIC PLAN</h2>
+            <p class="text-sm mb-6  font-semibold">$15.22 <span class="text-sm">/ MONTH</span></p>
+            <h3 class="text-lg font-bold mb-2">Features</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-500 text-md">
+              <li>2 meals per day</li>
+              <li>Customize your meal</li>
+              <li>Special meal on weekend</li>
+            </ul>
+            <p class="text-md text-gray-500 mb-6 text-justify">
+              Lorem ipsum dolor sit amet consectetur. Volutpat pharetra in quis nec ac fusce lectus.
+            </p>
+        </div>
+    </section>
+
+    <!-- Plan Features -->
+    <section id="features" class=" mx-auto mt-16 px-4 md:px-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800">Plan Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="p-6 bg-white rounded-lg hover:shadow-xl transition" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                <h3 class="text-xl font-semibold text-[var(--color-primary)]">Customizable Plans</h3>
+                <p class="mt-2 text-gray-600">Choose from vegetarian, non-vegetarian, or vegan options.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg hover:shadow-xl transition" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                <h3 class="text-xl font-semibold text-[var(--color-primary)]">Flexible Timings</h3>
+                <p class="mt-2 text-gray-600">Get meals at the time that suits your lifestyle.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg hover:shadow-xl transition" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                <h3 class="text-xl font-semibold text-[var(--color-primary)]">Weekly Specials</h3>
+                <p class="mt-2 text-gray-600">Enjoy chef-curated special meals every weekend.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg hover:shadow-xl transition" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                <h3 class="text-xl font-semibold text-[var(--color-primary)]">Weekly Specials</h3>
+                <p class="mt-2 text-gray-600">Enjoy chef-curated special meals every weekend.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section id="schedule" class="container mx-auto mt-16 px-4 md:px-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800">Weekly Schedule</h2>
+        <div class="bg-white rounded-lg p-6" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 text-center" id="day-buttons">
+                <button class="p-4 rounded-lg font-semibold bg-orange-500 text-white font-semibold hover:shadow-md transition-all duration-300" data-day="Monday">Monday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Tuesday">Tuesday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Wednesday">Wednesday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Thursday">Thursday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Friday">Friday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Saturday">Saturday</button>
+                <button class="p-4 rounded-lg font-semibold bg-gray-100  hover:shadow-md transition-all duration-300" data-day="Sunday">Sunday</button>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4" id="selected-day">Meals for Monday</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="meal-display">
+                    <!-- Meal cards with icons -->
+                    <div class="p-4 bg-gray-100 rounded-lg shadow relative">
+                        <h4 class="font-semibold mb-2">Veg Curry with Rice</h4>
+                        <p class="text-sm text-gray-600 flex items-center">
+                            <img src="/images/icons8-veg-48.png" alt="Veg" class="w-5 h-5 mr-2">
+                            Vegetarian
+                        </p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow relative">
+                        <h4 class="font-semibold mb-2">Grilled Chicken with Veggies</h4>
+                        <p class="text-sm text-gray-600 flex items-center">
+                            <img src="/images/icons8-non-vegetarian-food-symbol-48.png" alt="Non-Veg" class="w-5 h-5 mr-2">
+                            Non-Vegetarian
+                        </p>
+                    </div>
+                    <!-- <div class="p-4 bg-gray-100 rounded-lg shadow relative">
+                        <h4 class="font-semibold mb-2">Grilled Chicken with Veggies</h4>
+                        <p class="text-sm text-gray-600 flex items-center">
+                            <img src="non-veg-icon.png" alt="Non-Veg" class="w-5 h-5 mr-2">
+                            Non-Vegetarian
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="mt-8 mb-16 text-center max-sm:px-8">
+        <a href="./standardplans.html"><button class="bg-orange-500 max-sm:w-full max-sm:text-md  font-semibold text-md text-white px-6 py-3 rounded-xl shadow ">BUY NOW</button></a>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script>
+        const dayButtons = document.querySelectorAll('[data-day]');
+        const selectedDay = document.getElementById('selected-day');
+        const mealDisplay = document.getElementById('meal-display');
+
+        const mealsData = {
+            Monday: [
+                { name: 'Veg Curry with Rice', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Tuesday: [
+                { name: 'Veg Curry', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Wednesday: [
+                { name: 'pizza', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Thursday: [
+                { name: 'burger', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Friday: [
+                { name: 'dosa', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Saturday: [
+                { name: 'noodles', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            Sunday: [
+                { name: 'pasta', type: 'Vegetarian', icon: '/images/icons8-veg-48.png' },
+                { name: 'Grilled Chicken with Veggies', type: 'Non-Vegetarian', icon: '/images/icons8-non-vegetarian-food-symbol-48.png' }
+            ],
+            // Add more days here
+        };
+
+        dayButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove the orange background from all buttons
+                dayButtons.forEach(b => b.classList.remove('bg-orange-500', 'text-white'));
+                dayButtons.forEach(b => b.classList.add('bg-gray-100', ));
+                // Add orange background to the clicked button
+                button.classList.add('bg-orange-500', 'text-white');
+                const day = button.dataset.day;
+                selectedDay.textContent = `Meals for ${day}`;
+                mealDisplay.innerHTML = mealsData[day]
+                    .map(meal => `
+                        <div class="p-4 bg-gray-100 rounded-lg shadow">
+                            <h4 class="font-semibold mb-2">${meal.name}</h4>
+                            <p class="text-sm text-gray-600 flex items-center">
+                                <img src="${meal.icon}" alt="${meal.type}" class="w-5 h-5 mr-2">
+                                ${meal.type}
+                            </p>
+                        </div>
+                    `)
+                    .join('');
+            });
+        });
+
+    </script>
+</body>
+</html>
+
+
+    <!-- Footer -->
+
+    <footer id="app-footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/footer.js"></script>     
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaharkosh</title>
+    <link rel="shortcut icon" href="/images/aaharkosh-logo.jpg" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: "Roboto", serif;
+        }
+        :root {
+            --color-primary: #FF570C;
+            --color-secondary: #FF9D5C;
+            --color-primary-light: #FFE8D6;
+        }
+    </style>
+</head>
+<body class="">
+    
+    <header id="app-header" class="w-full"></header>
+
+    <div id="feedbackPage" class="w-full pt-20">
+        
+        <div class="h-28 py-16 text-center px-16 max-sm:px-6 max-sm:h-20 flex flex-col justify-center w-full bg-[var(--color-primary-light)] ">
+            <h1 class="text-4xl max-sm:text-3xl font-medium">FEEDBACK</h1>
+        </div>
+        
+
+        <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16 pt-8 w-full">
+        
+            <!-- <h1 class="contact-head text-center text-4xl max-sm:text-3xl max-sm:mb-8 font-semibold">GET IN <span class="text-primary">TOUCH</span></h1> -->
+            
+    
+            <div class="flex items-center justify-center mt-12 max-sm:mt-4">
+                <div class="bg-white contact-box rounded-xl shadow-lg w-full max-w-4xl p-8 max-sm:p-4 relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+        
+                    <!-- Main Content -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left Column -->
+                        <div>
+                            <h1 class="text-2xl font-semibold mb-6">Give us your feedback</h1>
+                            <p class="text-gray-600 text-md mb-8">
+                                Connect with us if you are facing any problem. Our team will reach out to you and help you get the easy and best solutions. Just fill out the given form with your basic details and our team will reach out to you soon. 
+                            </p>
+                            
+                            <div class="mt-12">
+                                <p class="text-gray-600 text-md mb-4">Feel free to get in touch with us via email or phone</p>
+    
+                                <div class="flex items-center gap-2 max-sm:mb-4 text-gray-600 hover:text-primary transition-all duration-300">
+                                    <i class="ri-mail-line text-2xl"></i>
+                                    <a href="AAHARKOSH@GMAIL.COM" class="text-sm cursor-pointer">
+                                        aaharkosh@gmail.com
+                                    </a>
+                                </div>
+    
+                                <div class="flex items-center gap-2 max-md:mt-[-5vw] text-gray-600 hover:text-primary transition-all duration-300">
+                                    <i class="ri-phone-line text-2xl"></i>
+                                    <div class="text-sm">
+                                        <a href="+91 6521312315" class="cursor-pointer text-sm">
+                                            +91 7987681268
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+                        <!-- Right Column - Form -->
+                        <form id="contactForm" class="grid gap-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <input type="text" id="firstName" placeholder="First name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+                                <input type="text" id="lastName" placeholder="Last name" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+                            </div>
+        
+                            <input type="email" id="email" placeholder="Email address" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+                            <input type="text" id="subject" placeholder="Enter your subject" class="bg-gray-100 focus:outline-none text-sm rounded-lg p-3 w-full" required>
+        
+                            <textarea id="message" placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full" required></textarea>
+        
+                            <div class="flex flex-col items-start gap-4 mt-4">
+                                <button type="submit" class="bg-[var(--color-secondary)] cursor-pointer text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
+                                    Submit
+                                </button>
+                                <div id="responseMessage" class="text-sm mt-[-0.7vw]"></div>                 
+                            </div>                
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Handle form submission
+                document.getElementById('contactForm').addEventListener('submit', async function(event) {
+                    event.preventDefault(); // Prevent page reload
+                
+                    const formData = {
+                        firstName: document.getElementById('firstName').value,
+                        lastName: document.getElementById('lastName').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                
+                    // API Endpoint (Replace with your API URL)
+                    const apiUrl = 'https://aharkosh-backend.onrender.com/api/website-feedback';
+                
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(formData),
+                        });
+                
+                        const result = await response.json();
+                
+                        if (response.ok) {
+                            document.getElementById('responseMessage').innerHTML = "<span class='text-green-500'>Message sent successfully!</span>";
+                            document.getElementById('contactForm').reset(); // Reset the form
+                            setTimeout(() => {
+                                responseMessage.innerHTML = "";
+                            }, 3000);
+                        } else {
+                            throw new Error(result.message || 'Something went wrong!');
+                        }
+                    } catch (error) {
+                        document.getElementById('responseMessage').innerHTML = `<span class='text-red-500'>Error: ${error.message}</span>`;
+                    }
+                });
+            </script>
+    
+        </div>
+
+    </div>
+
+    <footer id="app-footer" class="mt-8"></footer>
+
+
+
+
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scrolltrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- script file -->
+    <script src="script.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+
+
+    
+</body>
+</html>
