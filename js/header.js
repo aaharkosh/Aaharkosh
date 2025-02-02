@@ -7,7 +7,7 @@ let appHeader = `
         <!-- Logo -->
         <a href="./index.html#app-header" class="flex items-center gap-4">
             <div class="rounded-xl p-1">
-                <img class="h-[3.5vw] max-sm:h-[10vw] rounded-lg" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);"  src="/images/app logo.png" alt="AaharKosh Logo">
+                <img class="h-[3.5vw] max-sm:h-[10vw] rounded-lg" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);"  src="../images/app logo.png" alt="AaharKosh Logo">
             </div>
             <img class="h-[2vw] max-sm:h-[7.5vw]" src="../images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
         </a>
@@ -35,7 +35,7 @@ let appHeader = `
     <div id="mobile-menu" class="fixed inset-0 bg-gray-100 z-50 hidden flex flex-col p-5 pt-10 space-y-4 max-md:space-y-12 max-sm:space-y-6 text-3xl font-medium transform -translate-x-full transition-transform duration-500 ease-in-out">
         <!-- Close Icon -->
         <div class="relative pb-12">
-            <img class="h-8 absolute top-1 left-6" src="/images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
+            <img class="h-8 absolute top-1 left-6" src="../images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
             <button id="close-menu" class="absolute top-0 right-6 text-4xl focus:outline-none">
                 <i class="ri-close-line"></i>
             </button>
