@@ -499,8 +499,6 @@
 
     </div>
 
-
-
     <!-- CONTACT US -->
     
     <div id="contactPage" class="px-6 h-auto max-sm:pt-16 pb-16 w-full">
@@ -555,8 +553,9 @@
                         <textarea id="message" placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full" required></textarea>
 
                         <div class="flex flex-col items-start gap-4 mt-4">
-                            <button type="submit" class="bg-[var(--color-secondary)] text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
-                                Submit
+                            <button type="submit" id="submitButton" class="bg-[var(--color-secondary)] cursor-pointer text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
+                                <!-- <div class="w-12 h-12 border-4 border-t-4 border-gray-200 border-solid rounded-full animate-spin border-t-blue-500"></div> -->
+                                submit
                             </button>
                             <div id="responseMessage" class="text-sm mt-[-0.7vw]"></div>                 
                         </div>
@@ -568,6 +567,8 @@
                 // Handle form submission
                 document.getElementById('contactForm').addEventListener('submit', async function(event) {
                     event.preventDefault(); // Prevent page reload
+                    const submitButton = document.getElementById('submitButton');
+                    submitButton.innerHTML = "Submitting"; 
                 
                     const formData = {
                         firstName: document.getElementById('firstName').value,
@@ -594,6 +595,7 @@
                         if (response.ok) {
                             document.getElementById('responseMessage').innerHTML = "<span class='text-green-500'>Message sent successfully! We will get back to you soon.</span>";
                             document.getElementById('contactForm').reset(); // Reset the form
+                            submitButton.innerHTML = "Submit"; 
                             setTimeout(() => {
                                 responseMessage.innerHTML = "";
                             }, 3000);
@@ -616,6 +618,7 @@
 
         
     </div>
+
     <!-- footer -->
     <footer id="app-footer"></footer>
 
