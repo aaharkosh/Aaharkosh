@@ -7,7 +7,7 @@ let appfooter = `
             <div class="flex max-md:flex-col max-lg:flex-col justify-between gap-8">
                 <!-- First Column -->
                 <div class="">
-                    <img class="h-[2.5vw] max-sm:h-[7.5vw]" src="../images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
+                    <img class="h-[2.5vw] max-sm:h-[7.5vw]" src="./images/aaharkosh-text-image.svg" alt="AaharKosh Logo">
                     <div class="flex gap-3 mt-5 text-black">
                         <button class="text-lg px-2 py-1 shadow-md rounded-xl cursor-pointer bg-white transition duration-300 ease-in-out hover:scale-110">
                             <i class="ri-youtube-fill"></i>
