@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaharkosh</title>
     <link rel="shortcut icon" href="../images/aaharkosh-logo.jpg" type="image/x-icon">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -27,6 +27,20 @@
         }
         .animate-float {
             animation: float 3s ease-in-out infinite;
+        }
+        .loader {
+            border: 2px solid #FFE8D6;
+            border-top: 2px solid #FF570C;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -553,8 +567,7 @@
                         <textarea id="message" placeholder="Message" rows="4" class="bg-gray-100 focus:outline-none resize-none text-sm rounded-lg p-3 w-full" required></textarea>
 
                         <div class="flex flex-col items-start gap-4 mt-4">
-                            <button type="submit" id="submitButton" class="bg-[var(--color-secondary)] cursor-pointer text-white px-8 py-2 rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
-                                <!-- <div class="w-12 h-12 border-4 border-t-4 border-gray-200 border-solid rounded-full animate-spin border-t-blue-500"></div> -->
+                            <button type="submit" id="submitButton" class="bg-[var(--color-secondary)] px-8 py-2 flex items-center justify-center cursor-pointer text-white rounded-lg hover:bg-orange-500 transition-all duration-300 transition-colors">
                                 submit
                             </button>
                             <div id="responseMessage" class="text-sm mt-[-0.7vw]"></div>                 
@@ -568,7 +581,9 @@
                 document.getElementById('contactForm').addEventListener('submit', async function(event) {
                     event.preventDefault(); // Prevent page reload
                     const submitButton = document.getElementById('submitButton');
-                    submitButton.innerHTML = "Submitting"; 
+                    submitButton.innerHTML = `<div id="loader" class="px-2 flex items-center justify-center ">
+                                    <span class="loader"></span>
+                                </div>`; 
                 
                     const formData = {
                         firstName: document.getElementById('firstName').value,
@@ -580,6 +595,7 @@
                 
                     // API Endpoint (Replace with your API URL)
                     const apiUrl = 'https://aharkosh-backend.onrender.com/api/contact';
+                    // loader.classList.remove("hidden"); // Show loader
                 
                     try {
                         const response = await fetch(apiUrl, {
@@ -589,6 +605,7 @@
                             },
                             body: JSON.stringify(formData),
                         });
+                        // loader.classList.add("hidden"); // Hide loader after data is fetched
                 
                         const result = await response.json();
                 
