@@ -507,7 +507,7 @@
       function updateSlidePositions() {
         const totalSlides = slides.length;
         const isMobile = window.innerWidth < 768;
-        const visibleSlides = 3;
+        const visibleSlides =  3;
         
         slides.forEach((slide, index) => {
           // Calculate position relative to current index
@@ -729,41 +729,30 @@
     
     <div>
 
-        <section class="w-full px-4 py-16 mx-auto px-16">
+        <section class="w-full px-4 py-16 mx-auto max-w-7xl">
             <!-- Header -->
             <div class="text-center mb-12">
                 <div class="flex flex-col items-center justify-center gap-2 mb-4">
                     <!-- Crown Icon -->
                     <h2 class="text-4xl font-semibold mb-4 max-sm:mb-8 max-sm:text-3xl">WHAT OUR <span class="text-[var(--color-primary)]">CUSTOMERS SAY</span></h2>
-                    <p class="text-gray-500 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    </p>
-                </div>
+                <p class="text-gray-500 max-w-2xl mx-auto mb-10 text-sm md:text-base">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
             </div>
-        
+
             <!-- Testimonials Slider -->
-            <div class="relative flex items-center justify-between gap-16">
-                <button id="prev" class="bg-[var(--color-primary)] p-3 rounded-full cursor-pointer text-white shadow-md hover:bg-gray-300 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 sm:w-6 sm:h-6">
-                        <path d="m15 18-6-6 6-6"/>
-                      </svg>
-                </button>
-                <div class="testimonial-slider grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="relative ">
+                <div class="testimonial-slider grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"  >
                     <!-- Testimonial Cards will be dynamically inserted here -->
                 </div>
-                <button id="next" class=" bg-[var(--color-primary)] cursor-pointer p-3 rounded-full text-white shadow-md hover:bg-gray-300 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 sm:w-6 sm:h-6">
-                        <path d="m9 18 6-6-6-6"/>
-                      </svg>
-                </button>
             </div>
-        
+
             <!-- Navigation Dots -->
             <div class="flex justify-center gap-2 mt-8" id="slider-dots">
                 <!-- Dots will be dynamically added here -->
             </div>
         </section>
-        
+
         <script>
             const testimonials = [
                 { name: "Mark Davies", text: "There are many variations of kind to repeat clearly since all time necessary injected for the going are famous words." },
@@ -776,81 +765,68 @@
                 { name: "Olivia Martinez", text: "This program exceeded my expectations. I feel well-prepared for the job market now." },
                 { name: "Olivia Martinez", text: "This program exceeded my expectations. I feel well-prepared for the job market now." }
             ];
-        
+
             const sliderContainer = document.querySelector('.testimonial-slider');
             const dotsContainer = document.getElementById('slider-dots');
-            const previousButton = document.getElementById('prev');
-            const nextbutton = document.getElementById('next');
             const itemsPerPage = 3;
-            let currentvalueindex = 0;
             const totalPages = Math.ceil(testimonials.length / itemsPerPage);
-        
+
             function createTestimonialCard(testimonial) {
-                return `
-                    <div class="testimonial-card flex flex-col justify-between p-6 bg-white rounded-lg text-center relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.07);">
+                return (
+                    `<div class="testimonial-card flex flex-col justify-between p-6 bg-white rounded-lg text-center relative" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.07);">
                         <p class="text-gray-600 italic">"${testimonial.text}"</p>
                         <div class="mt-4 flex items-center justify-center gap-3">
                             <img src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=2536" alt="User" class="rounded-full h-12 mt-[-1vw]">
                             <div>
                                 <h4 class="font-bold text-gray-800">${testimonial.name}</h4>
-                                <div class="flex justify-center mb-4">
-                                    <span class="text-[var(--color-secondary)] text-xl">★★★★★</span>
+                            <div class="flex justify-center mb-4">
+                                <span class="text-[var(--color-secondary)] text-xl">★★★★★</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                `;
+                    </div>`
+                )
             }
-        
-            function renderTestimonials(index) {
-                const startIndex = index * itemsPerPage;
+
+            function renderTestimonials(startIndex) {
                 const endIndex = startIndex + itemsPerPage;
-                sliderContainer.innerHTML = testimonials.slice(startIndex, endIndex).map(createTestimonialCard).join('');
+                const currentTestimonials = testimonials.slice(startIndex, endIndex);
+                sliderContainer.innerHTML = currentTestimonials.map(createTestimonialCard).join('');
             }
-        
+
             function renderDots() {
-                dotsContainer.innerHTML = Array(totalPages).fill().map((_, i) => `
-                    <button class="w-2 h-2 rounded-full bg-[var(--color-primary-light)] cursor-pointer transition-all duration-300 ease-in-out" data-index="${i}"></button>
-                `).join('');
+                dotsContainer.innerHTML = Array(totalPages).fill().map((_, i) => 
+                    `<button class="w-2 h-2 rounded-full bg-[var(--color-primary-light)] cursor-pointer transition-all duration-300 ease-in-out" data-index="${i}"></button>`
+                ).join('');
                 updateActiveDot(0);
             }
-        
+
             function updateActiveDot(index) {
                 document.querySelectorAll('#slider-dots button').forEach((dot, i) => {
-                    dot.classList.toggle('w-6', i === index);
-                    dot.classList.toggle('bg-[var(--color-primary)]', i === index);
-                    dot.classList.toggle('w-2', i !== index);
-                    dot.classList.toggle('bg-[var(--color-primary-light)]', i !== index);
+                    if (i === index) {
+                        dot.classList.remove('w-2', 'bg-[var(--color-primary-light)]');
+                        dot.classList.add('w-6', 'bg-[var(--color-secondary)]');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-[var(--color-secondary)]');
+                        dot.classList.add('w-2', 'bg-[var(--color-primary-light)]');
+                    }
                 });
             }
-        
+
             function slideTo(index) {
-                currentvalueindex = index;
-                renderTestimonials(currentvalueindex);
-                updateActiveDot(currentvalueindex);
+                renderTestimonials(index * itemsPerPage);
+                updateActiveDot(index);
             }
-        
-            previousButton.addEventListener('click', () => {
-                if (currentvalueindex > 0) {
-                    slideTo(currentvalueindex - 1);
-                }
-            });
-        
-            nextbutton.addEventListener('click', () => {
-                if (currentvalueindex < totalPages - 1) {
-                    slideTo(currentvalueindex + 1);
-                }
-            });
-        
+
+            renderTestimonials(0);
+            renderDots();
+
             dotsContainer.addEventListener('click', (e) => {
                 if (e.target.matches('button')) {
                     const index = parseInt(e.target.getAttribute('data-index'));
                     slideTo(index);
                 }
             });
-        
-            renderTestimonials(0);
-            renderDots();
         </script>
 
     </div>
